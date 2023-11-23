@@ -21,39 +21,39 @@
 | Name                              | Modeling Role | Measurement Level | Description                                                               |
 | --------------------------------- | ------------- | ----------------- | ------------------------------------------------------------------------- |
 | **LoanNumber**                    | ID            | int               | unique row identifier                                                      |
-| **DateApproved**                  | input         | date              | date when the loan was approved                                            |
-| **SBAOfficeCode**                 | input         | categorical       | SBA Origination Office Code                                                |
+| **DateApproved**                  | excluded         | date              | date when the loan was approved                                            |
+| **SBAOfficeCode**                 | excluded         | categorical       | SBA Origination Office Code                                                |
 | **ProcessingMethod**              | input         | categorical       | Loan Delivery Method (PPP for first draw; PPS for second draw)             |
-| **BorrowerName**                  | input         | text              | Name of the borrower                                                       |
-| **BorrowerAddress**               | input         | text              | Street address of the borrower                                             |
+| **BorrowerName**                  | excluded         | text              | Name of the borrower                                                       |
+| **BorrowerAddress**               | excluded         | text              | Street address of the borrower                                             |
 | **BorrowerCity**                  | input         | categorical       | City of the borrower                                                        |
 | **BorrowerState**                 | input         | categorical       | State of the borrower                                                       |
-| **BorrowerZip**                   | input         | categorical       | Zip code of the borrower                                                   |
-| **LoanStatusDate**                | input         | date              | Date indicating the loan status                                            |
+| **BorrowerZip**                   | excluded         | categorical       | Zip code of the borrower                                                   |
+| **LoanStatusDate**                | excluded         | date              | Date indicating the loan status                                            |
 | **LoanStatus**                    | input         | categorical       | Description of loan status                                                 |
 | **Term**                          | input         | int               | Loan Maturity in Months                                                    |
-| **SBAGuarantyPercentage**         | input         | float             | Percentage of SBA Guaranty                                                 |
+| **SBAGuarantyPercentage**         | excluded         | float             | Percentage of SBA Guaranty                                                 |
 | **InitialApprovalAmount**         | input         | float             | Loan Approval Amount (at origination)                                      |
 | **CurrentApprovalAmount**         | input         | float             | Loan Approval Amount (current)                                             |
-| **UndisbursedAmount**             | input         | float             | Amount not yet disbursed                                                   |
-| **FranchiseName**                 | input         | categorical       | Name of the franchise                                                      |
+| **UndisbursedAmount**             | excluded         | float             | Amount not yet disbursed                                                   |
+| **FranchiseName**                 | excluded         | categorical       | Name of the franchise                                                      |
 | **ServicingLenderLocationID**     | input         | categorical       | Lender Location ID                                                         |
-| **ServicingLenderName**           | input         | categorical       | Name of the servicing lender                                               |
-| **ServicingLenderAddress**        | input         | text              | Street address of the servicing lender                                     |
+| **ServicingLenderName**           | excluded         | categorical       | Name of the servicing lender                                               |
+| **ServicingLenderAddress**        | excluded         | text              | Street address of the servicing lender                                     |
 | **ServicingLenderCity**           | input         | categorical       | City of the servicing lender                                               |
 | **ServicingLenderState**          | input         | categorical       | State of the servicing lender                                              |
-| **ServicingLenderZip**            | input         | categorical       | Zip code of the servicing lender                                           |
+| **ServicingLenderZip**            | excluded         | categorical       | Zip code of the servicing lender                                           |
 | **RuralUrbanIndicator**           | input         | categorical       | Indicator for rural or urban                                               |
 | **HubzoneIndicator**              | input         | categorical       | Indicator for Hubzone (Y/N)                                                |
 | **LMIIndicator**                  | input         | categorical       | Indicator for Low to Moderate Income (Y/N)                                 |
 | **ProjectCity**                   | input         | categorical       | City of the project                                                        |
-| **ProjectCountyName**             | input         | categorical       | County Name of the project                                                 |
+| **ProjectCountyName**             | excluded         | categorical       | County Name of the project                                                 |
 | **ProjectState**                  | input         | categorical       | State of the project                                                       |
-| **ProjectZip**                    | input         | categorical       | Zip code of the project                                                    |
+| **ProjectZip**                    | excluded         | categorical       | Zip code of the project                                                    |
 | **CD**                            | input         | categorical       | Project Congressional District                                              |
-| **NAICSCode**                     | input         | categorical       | NAICS 6 digit code                                                         |
-| **Race**                          | input         | categorical       | Borrower Race Description                                                  |
-| **Ethnicity**                     | input         | categorical       | Borrower Ethnicity Description                                             |
+| **NAICSCode**                     | excluded         | categorical       | NAICS 6 digit code                                                         |
+| **Race**                          | excluded         | categorical       | Borrower Race Description                                                  |
+| **Ethnicity**                     | excluded         | categorical       | Borrower Ethnicity Description                                             |
 | **UTILITIES_PROCEED**             | input         | float             | Proceeds for utilities                                                     |
 | **PAYROLL_PROCEED**               | input         | float             | Proceeds for payroll                                                       |
 | **MORTGAGE_INTEREST_PROCEED**     | input         | float             | Proceeds for mortgage interest                                             |
@@ -65,8 +65,8 @@
 | **OriginatingLender**             | input         | categorical       | Name of the originating lender                                             |
 | **OriginatingLenderCity**         | input         | categorical       | City of the originating lender                                             |
 | **OriginatingLenderState**        | input         | categorical       | State of the originating lender                                            |
-| **Gender**                        | input         | categorical       | Gender Indicator                                                           |
-| **Veteran**                       | input         | categorical       | Veteran Indicator                                                          |
+| **Gender**                        | excluded         | categorical       | Gender Indicator                                                           |
+| **Veteran**                       | excluded         | categorical       | Veteran Indicator                                                          |
 | **NonProfit**                     | input         | categorical       | 'Yes' if Business Type = Non-Profit Organization or Non-Profit Childcare Center or 501(c) Non Profit |
 | **UTILITIES_PROCEED_purpose**     | input         | categorical       | Purpose of utilities proceeds                                              |
 | **PAYROLL_PROCEED_purpose**       | input         | categorical       | Purpose of payroll proceeds                                                |
@@ -93,8 +93,8 @@
 | **ForgivenessAmount_per_employee** | input       | float             | Forgiveness amount per employee                                            |
 | **Prior PPP count**               | input         | int               | Count of previous PPP loans                                                |
 | **Prior PPS count**               | input         | int               | Count of previous PPS loans                                                |
-| **expected_UTILITIES_PROCEED**    | output        | float             | Expected utilities proceeds                                                |
-| **expected_PAYROLL_PROCEED**      | output        | float             | Expected payroll proceeds                                                  |
+| **expected_UTILITIES_PROCEED**    | input        | float             | Expected utilities proceeds                                                |
+| **expected_PAYROLL_PROCEED**      | input        | float             | Expected payroll proceeds                                                  |
 | **expected_MORTGAGE_INTEREST_PROCEED** | input | float           | Expected mortgage interest proceeds                                        |
 | **expected_RENT_PROCEED**         | input        | float             | Expected rent proceeds                                                     |
 | **expected_REFINANCE_EIDL_PROCEED** | input      | float             | Expected EIDL refinance proceeds                                           |
@@ -104,8 +104,8 @@
 | **expected_ApprovalDifference**   | input        | float             | Expected approval difference                                               |
 | **expected_InitialApprovalAmount** | input       | float             | Expected initial approval amount                                            |
 | **expected_CurrentApprovalAmount** | input       | float             | Expected current approval amount                                           |
-| **deviant_JR**                    | input         | float             | Deviant value for JR                                                       |
-| **deviant_JR_risk_score**         | output        | float             | Risk score for deviant JR                                                  |
+| **deviant_JR**                    | input         | float             | Deviant value for jobs reported                                                      |
+| **deviant_JR_risk_score**         | input        | float             | Risk score for deviant jobs reported                                                  |
 | **deviant_UTILITIES_PROCEED**     | input         | float             | Deviant value for utilities proceeds                                       |
 | **deviant_PAYROLL_PROCEED**       | input         | float             | Deviant value for payroll proceeds                                         |
 | **deviant_MORTGAGE_INTEREST_PROCEED** | input   | float             | Deviant value for mortgage interest proceeds                               |
@@ -169,7 +169,7 @@
     * **Version of the modeling software**: (ADD AT END)
     * **Hyperparameters or other settings of model**:
 ```
-IsolationForest(n_estimators=100, max_samples = auto, contamination = auto, max_features = 1.0, bootstrap = False, n_jobs = None, random_state=12345, verbose = 0, warm_start = False)
+IsolationForest(n_estimators=50, max_samples = auto, contamination = 0.01, max_features = 1.0, bootstrap = False, n_jobs = None, random_state=12345, verbose = 0, warm_start = False)
 ```
 
 2. Isolation Forest
@@ -226,7 +226,8 @@ clean['average_risk_score'] = clean[['deviant_UTILITIES_PROCEED_risk_score',
             'deviant_CurrentApprovalAmount_risk_score']].mean(axis=1)
 ```     
  
-
+* **Columns as outputs of models**:
+* 
 
 
 
