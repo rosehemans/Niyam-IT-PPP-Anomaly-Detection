@@ -131,7 +131,10 @@
 
 
 
-* **Source of training data**: Small Business Administration (https://data.sba.gov/dataset/ppp-foia), Data.gov (https://catalog.data.gov/dataset/small-business-administration-sba-size-standards-table)
+* **Source of training data**:
+* Small Business Administration (https://data.sba.gov/dataset/ppp-foia),
+* Data.gov (https://catalog.data.gov/dataset/small-business-administration-sba-size-standards-table)
+  
 * **Number of rows in training data**:
   * Training rows: 965,548
  
@@ -156,13 +159,48 @@
   * **Type of model**: Unsupervised Average Weighted Ensemble Anomaly Detection
   * **Model Composition**:
   * The ensemble model comprises three components:
-  * 1. Isolation Forest
+    1. Isolation Forest
     * **Software used to implement the model**: Python, scikit-learn
-    * **Version of the modeling software**:
-    * **Hyperparameters or other settings of your model**:
+    * **Version of the modeling software**: (ADD AT END)
+    * **Hyperparameters or other settings of model**:
   ```
-  IsolationForest(n_estimators=100, max_samples = auto, contamination = auto, max_features = 1.0, bootstrap = False, n_jobs = None, random_state=12345, verbose = 0, warm_start = False)
+IsolationForest(n_estimators=100, max_samples = auto, contamination = auto, max_features = 1.0, bootstrap = False, n_jobs = None, random_state=12345, verbose = 0, warm_start = False)
   ```
+
+    2. Isolation Forest
+    * **Software used to implement the model**: Python, H2O
+    * **Version of the modeling software**: (ADD AT END)
+    * **Hyperparameters or other settings of model**:
+```
+hyper_params = {
+    'ntrees':list(range(20, 140, 20)),
+    'max_depth':list(range(2, 30, 2)),
+    'sample_rate':[s/float(10) for s in range(1, 11)],
+    'col_sample_rate_per_tree' : [s/float(10) for s in range(1, 11)]
+}
+
+search_criteria = {
+    "strategy": "RandomDiscrete",
+    "max_models": 50,
+    "seed": 100,
+    'max_runtime_secs':3600
+}
+
+# Set up grid search
+grid = H2OGridSearch(
+    model=H2OIsolationForestEstimator,
+    grid_id='iso_grid1',
+    hyper_params=hyper_params,
+    search_criteria=search_criteria
+)
+
+train, test = ppp_model.split_frame(ratios = [0.70])
+grid.train(x=anomaly_inputs, training_frame=train)
+
+#selected model: iso_grid1_model_31
+
+isolationForest(ntrees = 40.0, max_depth = 24.0, sample_rate = 0.9, col_sample_rate_per_tree = 1.0)
+```
   
  
 
