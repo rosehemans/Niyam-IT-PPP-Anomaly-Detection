@@ -167,7 +167,7 @@
 IsolationForest(n_estimators=100, max_samples = auto, contamination = auto, max_features = 1.0, bootstrap = False, n_jobs = None, random_state=12345, verbose = 0, warm_start = False)
 ```
 
-    2. Isolation Forest
+  2. Isolation Forest
     * **Software used to implement the model**: Python, H2O
     * **Version of the modeling software**: (ADD AT END)
     * **Hyperparameters or other settings of model**:
@@ -198,8 +198,6 @@ grid.train(x=anomaly_inputs, training_frame=train)
 ```
 ```
 #selected model: iso_grid1_model_31
-```
-```
 isolationForest(ntrees = 40.0, max_depth = 24.0, sample_rate = 0.9, col_sample_rate_per_tree = 1.0)
 ```
   
