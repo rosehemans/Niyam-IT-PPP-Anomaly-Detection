@@ -139,23 +139,25 @@
   * Training rows: 965,548
  
 ### Model details
-* **Columns used as inputs in the final model**: 'ProcessingMethod','LoanStatus','Term',
-                  'InitialApprovalAmount','CurrentApprovalAmount','ForgivenessAmount',
-                  'RuralUrbanIndicator','HubzoneIndicator','LMIIndicator','BusinessAgeDescription',
-                  'CD','JobsReported','NonProfit','BusinessType','NAICS Industry Description','Size standards in number of employees', 'UTILITIES_PROCEED','PAYROLL_PROCEED','MORTGAGE_INTEREST_PROCEED','RENT_PROCEED','REFINANCE_EIDL_PROCEED',
-                  'HEALTH_CARE_PROCEED','DEBT_INTEREST_PROCEED',
-                  'non_forgiven_loan_portion','ApprovalDifference',
-'ApprovalDifference_per_employee','InitialApprovalAmount_per_employee','CurrentApprovalAmount_per_employee',
-'UTILITIES_PROCEED_per_employee','PAYROLL_PROCEED_per_employee','MORTGAGE_INTEREST_PROCEED_per_employee',
-                  'RENT_PROCEED_per_employee','REFINANCE_EIDL_PROCEED_per_employee','HEALTH_CARE_PROCEED_per_employee',
-                  'DEBT_INTEREST_PROCEED_per_employee','ForgivenessAmount_per_employee',
-                  'BorrowerCity','BorrowerState',
-                  'ServicingLenderCity','ServicingLenderState','ServicingLenderLocationID',
-                  'ProjectCity','ProjectState',
-                  'OriginatingLenderLocationID','OriginatingLender','OriginatingLenderCity','OriginatingLenderState', 'deviant_JR','deviant_UTILITIES_PROCEED','deviant_PAYROLL_PROCEED','deviant_MORTGAGE_INTEREST_PROCEED',
-                  'deviant_RENT_PROCEED','deviant_REFINANCE_EIDL_PROCEED','deviant_HEALTH_CARE_PROCEED',
-                  'deviant_DEBT_INTEREST_PROCEED','deviant_ForgivenessAmount','deviant_ApprovalDifference',
-                  'deviant_InitialApprovalAmount','deviant_CurrentApprovalAmount'
+* **Columns used as inputs in the final model**: 'ProcessingMethod', 'LoanStatus', 'Term',
+                  'InitialApprovalAmount', 'CurrentApprovalAmount', 'ForgivenessAmount', 
+                  'RuralUrbanIndicator', 'HubzoneIndicator', 'LMIIndicator',
+                  'BusinessAgeDescription', 'CD', 'JobsReported', 'NonProfit',
+                  'BusinessType', 'NAICS Industry Description', 'Size standards in number of employees',
+                  'UTILITIES_PROCEED', 'PAYROLL_PROCEED', 'MORTGAGE_INTEREST_PROCEED',
+                  'RENT_PROCEED', 'REFINANCE_EIDL_PROCEED', 'HEALTH_CARE_PROCEED', 'DEBT_INTEREST_PROCEED',
+                  'non_forgiven_loan_portion','ApprovalDifference', 'ApprovalDifference_per_employee',
+                  'InitialApprovalAmount_per_employee', 'CurrentApprovalAmount_per_employee',
+                  'UTILITIES_PROCEED_per_employee', 'PAYROLL_PROCEED_per_employee', 'MORTGAGE_INTEREST_PROCEED_per_employee',
+                  'RENT_PROCEED_per_employee', 'REFINANCE_EIDL_PROCEED_per_employee', 'HEALTH_CARE_PROCEED_per_employee',
+                  'DEBT_INTEREST_PROCEED_per_employee', 'ForgivenessAmount_per_employee',
+                  'BorrowerCity', 'BorrowerState', 'ServicingLenderCity', 'ServicingLenderState',
+                  'ServicingLenderLocationID', 'ProjectCity', 'ProjectState',
+                  'OriginatingLenderLocationID', 'OriginatingLender', 'OriginatingLenderCity', 'OriginatingLenderState',
+                  'deviant_JR', 'deviant_UTILITIES_PROCEED', 'deviant_PAYROLL_PROCEED', 'deviant_MORTGAGE_INTEREST_PROCEED',
+                  'deviant_RENT_PROCEED', 'deviant_REFINANCE_EIDL_PROCEED', 'deviant_HEALTH_CARE_PROCEED',
+                  'deviant_DEBT_INTEREST_PROCEED', 'deviant_ForgivenessAmount', 'deviant_ApprovalDifference',
+                  'deviant_InitialApprovalAmount', 'deviant_CurrentApprovalAmount'
   
   * **Type of model**: Unsupervised Average Weighted Ensemble Anomaly Detection
   
