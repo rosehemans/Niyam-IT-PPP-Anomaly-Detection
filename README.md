@@ -207,7 +207,22 @@ isolationForest(ntrees = 40.0, max_depth = 24.0, sample_rate = 0.9, col_sample_r
 3. Average risk score
     * **Software used to implement the model**: Python
     * **Version of the modeling software**: (ADD AT END)
-    * **Calculation of average risk score**: 
+    * **Calculation of average risk score**: Using industry size standards, we calculated standard 'expected' figures for 'per employee' data for UTILITIES_PROCEED, PAYROLL_PROCEED, MORTGAGE_INTEREST_PROCEED, REFINANCE_EIDL_PROCEED, HEALTH_CARE_PROCEED, DEBT_INTEREST_PROCEED, InitialApprovalAmount, CurrentApprovalAmount, ApprovalDifference, and ForgivenessAmount. We then calculated 'deviant' figures by calculating the difference between actual and 'expected' figures for each loan. Risk scores for each figure were calculated by percentile rank among all loans. The final average risk score is a simple arithmetic mean of risk scores:
+  
+```
+# Calculate Average Risk Score
+clean['average_risk_score'] = clean[['deviant_UTILITIES_PROCEED_risk_score',
+            'deviant_PAYROLL_PROCEED_risk_score',
+            'deviant_MORTGAGE_INTEREST_PROCEED_risk_score',
+            'deviant_RENT_PROCEED_risk_score',
+            'deviant_REFINANCE_EIDL_PROCEED_risk_score',
+            'deviant_HEALTH_CARE_PROCEED_risk_score',
+            'deviant_DEBT_INTEREST_PROCEED_risk_score',
+            'deviant_ForgivenessAmount_risk_score',
+            'deviant_ApprovalDifference_risk_score',
+            'deviant_InitialApprovalAmount_risk_score',
+            'deviant_CurrentApprovalAmount_risk_score']].mean(axis=1)
+```     
  
 
 
