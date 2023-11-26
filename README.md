@@ -203,6 +203,7 @@ IsolationForest(n_estimators=50, max_samples = auto, contamination = 0.01, max_f
     * **Software used to implement the model**: Python, H2O
     * **Version of the modeling software**: Python 3.9.12, H2O 3.44.0.1
     * **Hyperparameters or other settings of model**:
+
 ```
 hyper_params = {
     'ntrees':list(range(20, 140, 20)),
@@ -257,7 +258,7 @@ isolationForest(ntrees = 40.0, max_depth = 24.0, sample_rate = 0.9, col_sample_r
     * **Software used to implement the model**: Python, pandas
     * **Version of the modeling software**: Python 3.9.12
     * **Calculation of average risk score**: Using industry size standards, we calculated standard 'expected' figures for 'per employee' data for UTILITIES_PROCEED, PAYROLL_PROCEED, MORTGAGE_INTEREST_PROCEED, REFINANCE_EIDL_PROCEED, HEALTH_CARE_PROCEED, DEBT_INTEREST_PROCEED, InitialApprovalAmount, CurrentApprovalAmount, ApprovalDifference, and ForgivenessAmount. We then calculated 'deviant' figures by calculating the difference between actual and 'expected' figures for each loan. Risk scores for each figure were calculated by percentile rank among all loans. The final average risk score is a simple arithmetic mean of risk scores:
-  
+
 ```
 # Calculate Average Risk Score
 clean['average_risk_score'] = clean[['deviant_UTILITIES_PROCEED_risk_score',
