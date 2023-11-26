@@ -161,20 +161,40 @@
   
 * **Type of model**: Unsupervised Average Weighted Ensemble Anomaly Detection
   
-## Model Composition**:
+## Model Composition and Methodology**:
 The ensemble model comprises three components:
 
-### 1. Isolation Forest
+### 1. Isolation Forest (SKL IF)
     * **Software used to implement the model**: Python, scikit-learn
-    * **Version of the modeling software**: (ADD AT END)
+    * **Version of the modeling software**: Python 3.9.12, scikit-learn 1.0.2
     * **Hyperparameters or other settings of model**:
 ```
 IsolationForest(n_estimators=50, max_samples = auto, contamination = 0.01, max_features = 1.0, bootstrap = False, n_jobs = None, random_state=12345, verbose = 0, warm_start = False)
 ```
 
-### 2. Isolation Forest
+* **The scikit-learn Isolation Forest model is an unsupervised machine learning algorithm used for anomaly detection, isolating anomalies by constructing random decision trees and identifying instances that require fewer partitions to isolate.**
+
+* Rare and distant points are anomalies.
+* Isolation Forest uses random trees to isolate anomalies.
+* Randomly selects features and split values for tree construction.
+* Anomalies closer to tree roots need fewer partitions.
+* Shorter average path lengths across trees flag anomalies.
+
+* **Advantages**:
+  * Scalability
+  * Robust to outliers
+  * Minimal hyperparameters
+  * Extensive documentation and online support
+  * User friendly
+
+* **Disadvantages**:
+  * Struggles with dense data
+  * Difficulty handling multimodal data
+  * Random sensitivity
+  
+### 2. Isolation Forest (H2O IF)
     * **Software used to implement the model**: Python, H2O
-    * **Version of the modeling software**: (ADD AT END)
+    * **Version of the modeling software**: Python 3.9.12, H2O 3.44.0.1
     * **Hyperparameters or other settings of model**:
 ```
 hyper_params = {
@@ -205,6 +225,15 @@ grid.train(x=anomaly_inputs, training_frame=train)
 #selected model: iso_grid1_model_31
 isolationForest(ntrees = 40.0, max_depth = 24.0, sample_rate = 0.9, col_sample_rate_per_tree = 1.0)
 ```
+* **Advantages**:
+  * Leverages distributed computing and parallelization
+  * Automated hyperparameter optimization (AutoML)
+  * Integration with H2O's framework and ecosystem
+
+* **Disadvantages**:
+  * Complexity and steeper learning curve
+  * Limited documentation and community support available
+
 ### Quantitative Analysis
 
 **Isolation Forest (H2O)**
@@ -217,9 +246,9 @@ isolationForest(ntrees = 40.0, max_depth = 24.0, sample_rate = 0.9, col_sample_r
 | --------------- | ------------------------ | ------------------- | --------- | --------- | ---------- | ---------- | ----------- |
 | 40.0 | 40.0 | 9,689,439.0 | 24.0 | 24.0 | 24.0 | 7030.0 | 34,088.0 | 19,211.75 |
 
-### 3. Average Risk Score
+### 3. Average Risk Score (AVR)
     * **Software used to implement the model**: Python, pandas
-    * **Version of the modeling software**: (ADD AT END)
+    * **Version of the modeling software**: Python 3.9.12
     * **Calculation of average risk score**: Using industry size standards, we calculated standard 'expected' figures for 'per employee' data for UTILITIES_PROCEED, PAYROLL_PROCEED, MORTGAGE_INTEREST_PROCEED, REFINANCE_EIDL_PROCEED, HEALTH_CARE_PROCEED, DEBT_INTEREST_PROCEED, InitialApprovalAmount, CurrentApprovalAmount, ApprovalDifference, and ForgivenessAmount. We then calculated 'deviant' figures by calculating the difference between actual and 'expected' figures for each loan. Risk scores for each figure were calculated by percentile rank among all loans. The final average risk score is a simple arithmetic mean of risk scores:
   
 ```
@@ -287,7 +316,7 @@ We can start to analyze outliers here by observing very large loan amounts borro
 
 ![Current PE by JR](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/aeb62f40cfdda3aeeb2e8fd66f58e5c181ee20ff/ppp_eda_loan_amount_emp.png)
 
-# Average Risk Score Model Exploratory Data Analysis
+# AVR Model Exploratory Data Analysis
 
 After calculating the average risk score for each loan, we have prepared the following EDA:
 
@@ -309,13 +338,13 @@ The deviant amounts for Forgiveness Amount, Initial Approval Amount, Current App
 
 # scikit-learn Isolation Forest Model Exploratory Data Analysis
 
-#### Distribution of sklearn Isolation Forest Anomaly Scores
+#### Distribution of SKL IF Anomaly Scores
 
 The mean for anomaly scores from the sklearn Isolation Forest model was 0.0156. The model outputted 1.01% of the dataset as suspected anomalies.
 
 ![sklearn Score Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/61572e8a84a1a96af90185bec25449a6c2c364a8/ppp_skl_score_hist.png)
 
-#### Feature Importance for sklearn Isolation Forest
+#### Feature Importance for SKL IF
 
 PAYROLL_PROCEED_per_empoyee, Size standards in number of employees, ForgivenessAmount, and JobsReported were the most important features in this model. BorrowerState closely led and was noted for further EDA at the end of the final model.
 
@@ -344,21 +373,21 @@ Here we can interpret the rules of the tree where UTILITIES_PROCEED_per_employee
 
 ![Surrogate Model](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/b8d18791060fc4278ff41eca97645520033fc490/ppp_sklearn_surrogate_dt.png)
 
-# H2O Isolation Forest Model Exploratory Data Analysis
+# H2O IF Model Exploratory Data Analysis
 
-#### Distribution of H2O Isolation Forest Anomaly Scores
+#### Distribution of H2O IF Anomaly Scores
 
 The mean anomaly score for this model was 0.005, with the top 2.6% of scores being assigned as suspected anomalies by the model. The score threshold for these top 2.6% suspected anomalies was 0.036.
 
 ![H2O IF Anomaly Scores Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/36765a2872df2da1ace34264c4d18af1955b4a10/ppp_h2o_score_hist.png)
 
-#### Correlation of Numerical Features with H2O Isolation Forest Model Anomaly Scores
+#### Correlation of Numerical Features with H2O IF Model Anomaly Scores
 
 InitialApprovalAmount (0.42), CurrentApprovalAmount (0.42), PAYROLL_PROCEED (0.37), and ForgivenessAmount (0.37) were top for strong positive correlation with the anomaly risk score for this model.
 
 ![H2O IF Anomaly Score Correlations](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/c6fa3d1d7d067a8785e98006edc722e7d4becb09/ppp_h20_if_corr.png)
 
-#### Geographical Analysis of Suspected Anomalies from H2O Model
+#### Geographical Analysis of Suspected Anomalies from H2O IF Model
 
 The 'Top 10 States by Anomaly Percentage per State' graph at the bottom shows Wyoming (13.9%), Alaska (12.8%), Alabama (5.9%), and Wisconsin (5.0%) were the top 4 known states where suspected anomalous loans occurred the most. 
 
@@ -368,10 +397,44 @@ In comparison, DC (641 normal loans and 14 anomalous loans per 100k), North Dako
 
 ![Geo Analysis H20](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/4fb516030eb9a1230aad91a54928b0bc9589fbe6/ppp_h2o_geo.png)
 
-#### Industry Analysis of Suspected Anomalies from H2O Model
+#### Industry Analysis of Suspected Anomalies from H2O IF Model
 
 New Car Dealers (2.03%), Full-Service Restaurants (1.76%), Couriers and Express Delivery Services (1.65%), and Limited Full Service Restaurants (1.41%) were top 3 known industries for suspected anomalous loans. Almost 8% of all suspected anomalous loans either did not report a valid NAICS code on their application or NAICS code data was missing in the SBA data collection process.
 
 ![H2O Industry Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/0695588c871e426b6d7624439e9a311080709fcd/ppp_h2o_industries.png)
 
 ![H2O Industries Word Cloud](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/e59e7670b412aad666f562f1a17806ce755b60f8/ppp_h2o_industries_wc.png)
+
+# Final Blended Model Exploratory Data Analysis
+
+#### Distribution of Final Risk Scores
+
+The vast majority of loans had a risk score between 0.0 and 0.2. The mean risk score was 0.13 and the histogram below displays right skew as expected. The top 1.5% of loans had a risk score threshold of 0.328.
+
+![Final Risk Score Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/678d07906f9d6e8147fdd1845797a4b10f73764b/ppp_final_score_hist.png)
+
+# Ethical Considerations
+
+**Racial and Demographic Bias**: Excluding explicit demographic information doesn't eliminate thr risk of encoding bias. Anomaly detection models can be trained on proxies of correlated features where racial of demographic bias is still perpertuate. 
+**Ambiguity in Validation**: In unsupervised anomaly detection, the absence of labeled data identifying actual anomalies or fraud makes it challenging to validate the model's predictions accurately. We encourage analysis and decisions to be made based on differences of trends in features between suspected anomalies and suspected normal loans. This paired with significant domain knowledge of fraud detection for loans of this type will mitigate this ethical concern.
+**Transparency and Complexity**: Blended machine learning models can be highly complex. The incorporation of three algorithms makes interpretability difficult. To the best of our ability, we have provided as transparent and interpretable of a model card as possible.
+
+# Risk Considerations
+**False Positives and False Negatives**: Even without labels, anomaly detection models may incorrectly label normal instances as anomalies (false positives) or fail to identify actual anomalies (false negatives).
+**Model Robustness and Generalization**: This model may perform well on this PPP dataset, but might fail to generalize to a new loan program dataset.
+**Data Quality**: The dataset included many missing values, some of which were indentified as missing from the original loan applications. However, some missing values may be the result of poor data collection practices from the data sources provided. There is little evidence of how to identify the difference.
+
+These risks can be mitigated by applying decision-making paired only with extensive domain knowledge of fraud detection.
+
+# Potential Next Steps
+
+
+# Author Contributions
+* RH served as the primary contributor for the model card
+* KH and PS contributed equally for the SKL IF notebook
+* BW served as the primary contributor for the H2O IF notebook
+* RH served as the primary contributor for the AVR model notebook
+* PS, KH, BW, and RH contributed equally to EDA across all notebooks
+
+
+
