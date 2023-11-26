@@ -2,7 +2,14 @@
 
 # Basic Information
 
-* **Person or organization developing model**: Niyam IT; Rohit Bollineni (rbollineni@niyamit.com), GWU MSBA; Rose Hemans (rose.hemans@gwu.edu), Bagya Maduwanthi Widanagamage (bmwidanagamage@gwu.edu), Kaixuan (Kevin) Han (kaixuan.han@gwu.edu), Pavneet Singh (pavneet@gwu.edu)
+* **Person or organization developing model**:
+Niyam IT;
+  * Rohit Bollineni (rbollineni@niyamit.com)
+GWU MSBA;
+  * Rose Hemans (rose.hemans@gwu.edu)
+  * Bagya Maduwanthi Widanagamage (bmwidanagamage@gwu.edu)
+  * Kaixuan (Kevin) Han (kaixuan.han@gwu.edu)
+  * Pavneet Singh (pavneet@gwu.edu)
   
 * **Model date**: Nov, 2023
 * **Model version**: 1.0
