@@ -230,7 +230,7 @@ clean['average_risk_score'] = clean[['deviant_UTILITIES_PROCEED_risk_score',
 
 ### Quantitative Analysis
 
-** Isolation Forest (H2O)**
+**Isolation Forest (H2O)**
 
 | Anomaly Score | Normalized Anomaly Score |
 | ------------- | ------------------------ |
@@ -354,5 +354,22 @@ Here we can interpret the rules of the tree where UTILITIES_PROCEED_per_employee
 The mean anomaly score for this model was 0.005, with the top 2.6% of scores being assigned as suspected anomalies by the model. The score threshold for these top 2.6% suspected anomalies was 0.036.
 
 ![H2O IF Anomaly Scores Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/36765a2872df2da1ace34264c4d18af1955b4a10/ppp_h2o_score_hist.png)
+
+#### Correlation of Numerical Features with H2O Isolation Forest Model Anomaly Scores
+
+InitialApprovalAmount (0.42), CurrentApprovalAmount (0.42), PAYROLL_PROCEED (0.37), and ForgivenessAmount (0.37) were top for strong positive correlation with the anomaly risk score for this model.
+
+![H2O IF Anomaly Score Correlations](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/c6fa3d1d7d067a8785e98006edc722e7d4becb09/ppp_h20_if_corr.png)
+
+#### Geographical Analysis of Suspected Anomalies from H2O Model
+
+The 'Top 10 States by Anomaly Percentage per State' graph at the bottom shows Wyoming (13.9%), Alaska (12.8%), Alabama (5.9%), and Wisconsin (5.0%) were the top 4 known states where suspected anomalous loans occurred the most. 
+
+The top two graphs show clearly just how different the top 10 states for suspected anomalous loans per 100,000 people are compared to top states for normal loans. Wyoming (51 anomalous loans per 100k) and Arkansas (46 anomalous loans per 100k) had the highest absolute number of suspected anomalous loans adjusted for state population size.
+
+In comparison, DC (641 normal loans and 14 anomalous loans per 100k), North Dakota (402 normal loans and 12 anomalous loans per 100k), and Massachusetts (361 normal loans and 8 anomalous loans per 100k) were the top states for number of normal loans adjusted for state population size, whilst still exhibiting low anomalous loan rates.
+
+![Geo Analysis H20](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/4fb516030eb9a1230aad91a54928b0bc9589fbe6/ppp_h2o_geo.png)
+
 
 
