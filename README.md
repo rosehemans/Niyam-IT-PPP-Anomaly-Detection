@@ -168,7 +168,7 @@ GWU MSBA;
   
 * **Type of model**: Unsupervised Average Weighted Ensemble Anomaly Detection
   
-## Model Composition and Methodology**:
+## Model Composition and Methodology:
 The ensemble model comprises three components:
 
 ### 1. Isolation Forest (SKL IF)
