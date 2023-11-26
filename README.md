@@ -207,7 +207,7 @@ isolationForest(ntrees = 40.0, max_depth = 24.0, sample_rate = 0.9, col_sample_r
 ```
 
 3. Average risk score
-    * **Software used to implement the model**: Python
+    * **Software used to implement the model**: Python, pandas
     * **Version of the modeling software**: (ADD AT END)
     * **Calculation of average risk score**: Using industry size standards, we calculated standard 'expected' figures for 'per employee' data for UTILITIES_PROCEED, PAYROLL_PROCEED, MORTGAGE_INTEREST_PROCEED, REFINANCE_EIDL_PROCEED, HEALTH_CARE_PROCEED, DEBT_INTEREST_PROCEED, InitialApprovalAmount, CurrentApprovalAmount, ApprovalDifference, and ForgivenessAmount. We then calculated 'deviant' figures by calculating the difference between actual and 'expected' figures for each loan. Risk scores for each figure were calculated by percentile rank among all loans. The final average risk score is a simple arithmetic mean of risk scores:
   
@@ -343,6 +343,16 @@ global_surrogate_dt.train(training_frame = train, x = anomaly_inputs, y = "anoma
 
 *Since the surrogate isolation forest model has just one decision tree, we have named it a decision tree but we would like to note that the model is still used in the context of anomaly detection and not classification since this is an unsupervised learning task.*
 
+Here we can interpret the rules of the tree where UTILITIES_PROCEED_per_employee, deviant_ApprovalDifference, ServicingLenderCity, JobsReported, HEALTH_CARE_PROCEED and deviant_JR (jobs reported) were some of the most important features for splitting.
+
 ![Surrogate Model](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/b8d18791060fc4278ff41eca97645520033fc490/ppp_sklearn_surrogate_dt.png)
+
+### H2O Isolation Forest Model Exploratory Data Analysis
+
+#### Distribution of H2O Isolation Forest Anomaly Scores
+
+The mean anomaly score for this model was 0.005, with the top 2.6% of scores being assigned as suspected anomalies by the model. The score threshold for these top 2.6% suspected anomalies was 0.036.
+
+![H2O IF Anomaly Scores Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/36765a2872df2da1ace34264c4d18af1955b4a10/ppp_h2o_score_hist.png)
 
 
