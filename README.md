@@ -328,6 +328,15 @@ PAYROLL_PROCEED_per_empoyee, Size standards in number of employees, ForgivenessA
 
 We ran a surrogate model to provide a simplified interpretable model that mimics the predictions of our more complex and computationally expensive Isolation Forest model. This surrogate model is an Isolation Forest model with just one tree and the following parameters:
 
+```
+global_surrogate_dt = H2OIsolationForestEstimator(model_id = model_id,
+                                               ntrees = 1, max_depth = 3,
+                                               sample_rate = 1, mtries = 2, seed=12345)
+global_surrogate_dt.train(training_frame = train, x = anomaly_inputs, y = "anomaly")
+```
+
+Below is a model summary:
+
 | Number of Trees | Number of Internal Trees | Model Size in Bytes | Min Depth | Max Depth | Min Leaves | Max Leaves | Mean Leaves |
 | --------------- | ------------------------ | ------------------- | --------- | --------- | ---------- | ---------- | ----------- |
 | 1.0 | 1.0 | 133.0 | 3.0 | 3.0 | 3.0 | 6.0 | 6.0 | 6.0 |
