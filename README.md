@@ -159,9 +159,9 @@
                   'deviant_DEBT_INTEREST_PROCEED', 'deviant_ForgivenessAmount', 'deviant_ApprovalDifference',
                   'deviant_InitialApprovalAmount', 'deviant_CurrentApprovalAmount'
   
-  * **Type of model**: Unsupervised Average Weighted Ensemble Anomaly Detection
+* **Type of model**: Unsupervised Average Weighted Ensemble Anomaly Detection
   
-  * **Model Composition**:
+* **Model Composition**:
   * The ensemble model comprises three components:
 
 1. Isolation Forest
