@@ -286,7 +286,23 @@ We can start to analyze outliers here by observing very large loan amounts borro
 
 ![Current PE by JR](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/aeb62f40cfdda3aeeb2e8fd66f58e5c181ee20ff/ppp_eda_loan_amount_emp.png)
 
+#### Distribution of Average Risk Scores
 
+The mean average risk score for all loans was 0.228. 
+
+Threshold for the top 10% of risk scores: 0.394
+
+Threshold for the top 5% of risk scores: 0.442
+
+Threshold for the top 1% of risk scores: 0.586
+
+![Average Risk Score Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/67064ecd54608507a5adf2eba3ecd19343448478/ppp_avr_hist.png)
+
+### Correlation of Numerical Features with Average Risk Score
+
+The deviant amounts for Forgiveness Amount, Initial Approval Amount, Current Approval Amount were most highly correlated with average risk score despite all deviant risk scores being equally weighted in the Average Risk Score calculation (i.e., actual amount - expected amount based on industry size standards).
+
+![Correlation of AVR with Numerical Features](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/67064ecd54608507a5adf2eba3ecd19343448478/ppp_avr_corr.png)
 
 
 
