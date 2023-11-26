@@ -240,6 +240,8 @@ clean['average_risk_score'] = clean[['deviant_UTILITIES_PROCEED_risk_score',
 | --------------- | ------------------------ | ------------------- | --------- | --------- | ---------- | ---------- | ----------- |
 | 40.0 | 40.0 | 9,689,439.0 | 24.0 | 24.0 | 24.0 | 7030.0 | 34,088.0 | 19,211.75 |
 
+### General Exploratory Data Analysis
+
 #### Correlation Heatmap
 
 Initial and Current Approval Amount were both highly correlated with ForgivenessAmount, indicating both in a statistical sense the higher the approval amount, the higher the forgiveness amount but logically of the loans that were forgiven, it would seem that they were mostly, if not completely forgiven, rather than just partially.
@@ -286,9 +288,13 @@ We can start to analyze outliers here by observing very large loan amounts borro
 
 ![Current PE by JR](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/aeb62f40cfdda3aeeb2e8fd66f58e5c181ee20ff/ppp_eda_loan_amount_emp.png)
 
+### Average Risk Score Model Exploratory Data Analysis
+
+After calculating the average risk score for each loan, we have prepared the following EDA:
+
 #### Distribution of Average Risk Scores
 
-The mean average risk score for all loans was 0.228. 
+The mean average risk score for all loans was 0.228 and the threshold for the top 1.5% of risk scores was 0.545. Below are some other notable thresholds:
 
 Threshold for the top 10% of risk scores: 0.394
 
@@ -296,7 +302,7 @@ Threshold for the top 5% of risk scores: 0.442
 
 Threshold for the top 1% of risk scores: 0.586
 
-![Average Risk Score Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/67064ecd54608507a5adf2eba3ecd19343448478/ppp_avr_hist.png)
+![Average Risk Score Histogram]([https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/67064ecd54608507a5adf2eba3ecd19343448478/ppp_avr_hist.png](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/49c88b040f210436a14317140f54503d2e1a957b/ppp_avr_score_hist.png))
 
 ### Correlation of Numerical Features with Average Risk Score
 
@@ -304,6 +310,19 @@ The deviant amounts for Forgiveness Amount, Initial Approval Amount, Current App
 
 ![Correlation of AVR with Numerical Features](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/67064ecd54608507a5adf2eba3ecd19343448478/ppp_avr_corr.png)
 
+### scikit-learn Isolation Forest Model Exploratory Data Analysis
+
+#### Distribution of sklearn Isolation Forest Anomaly Scores
+
+The mean for anomaly scores from the sklearn Isolation Forest model was 0.0156. The model outputted 1.01% of the dataset as suspected anomalies.
+
+![sklearn Score Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/61572e8a84a1a96af90185bec25449a6c2c364a8/ppp_skl_score_hist.png)
+
+#### Feature Importance for sklearn Isolation Forest
+
+PAYROLL_PROCEED_per_empoyee, Size standards in number of employees, ForgivenessAmount, and JobsReported were the most important features in this model. BorrowerState closely led and was noted for further EDA at the end of the final model.
+
+![sklearn Feature Importance](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/89e8ec4d8e53e19899db6dbed29a83afec2a3834/ppp_sklearn_feature_importance.png)
 
 
 
