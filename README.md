@@ -376,7 +376,7 @@ global_surrogate_dt = H2OIsolationForestEstimator(model_id = model_id,
 global_surrogate_dt.train(training_frame = train, x = anomaly_inputs, y = "anomaly")
 ```
 
-* **Model Summary**:
+**Model Summary**:
 
 | Number of Trees | Number of Internal Trees | Model Size in Bytes | Min Depth | Max Depth | Min Leaves | Max Leaves | Mean Leaves |
 | --------------- | ------------------------ | ------------------- | --------- | --------- | ---------- | ---------- | ----------- |
