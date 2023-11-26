@@ -172,9 +172,10 @@ GWU MSBA;
 The ensemble model comprises three components:
 
 ### 1. Isolation Forest (SKL IF)
-    * **Software used to implement the model**: Python, scikit-learn
-    * **Version of the modeling software**: Python 3.9.12, scikit-learn 1.0.2
-    * **Hyperparameters or other settings of model**:
+   * **Software used to implement the model**: Python, scikit-learn
+   * **Version of the modeling software**: Python 3.9.12, scikit-learn 1.0.2
+   * **Hyperparameters or other settings of model**:
+ 
 ```
 IsolationForest(n_estimators=50, max_samples = auto, contamination = 0.01, max_features = 1.0, bootstrap = False, n_jobs = None, random_state=12345, verbose = 0, warm_start = False)
 ```
