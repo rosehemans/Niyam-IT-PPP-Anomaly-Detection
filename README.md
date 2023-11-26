@@ -413,21 +413,35 @@ The vast majority of loans had a risk score between 0.0 and 0.2. The mean risk s
 
 ![Final Risk Score Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/678d07906f9d6e8147fdd1845797a4b10f73764b/ppp_final_score_hist.png)
 
+#### Jaccard Heatmap of Final Model Components (AVR, H2O IF, SKL IF)
+
+* The two machine learning models (H20 IF and SKL IF) had the highest intersection of unique loans with a Jaccard Similarity Coefficient (JSC) of 0.3279.
+
+* The AVR model had a JSC of 0.1653 with the SKL IF model.
+
+![Jaccard Heatmap](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/314416d56728e5f82ebebedddbc477aac3228e1e/ppp_jaccard.png)
+
+
 # Ethical Considerations
 
-**Racial and Demographic Bias**: Excluding explicit demographic information doesn't eliminate thr risk of encoding bias. Anomaly detection models can be trained on proxies of correlated features where racial of demographic bias is still perpertuate. 
-**Ambiguity in Validation**: In unsupervised anomaly detection, the absence of labeled data identifying actual anomalies or fraud makes it challenging to validate the model's predictions accurately. We encourage analysis and decisions to be made based on differences of trends in features between suspected anomalies and suspected normal loans. This paired with significant domain knowledge of fraud detection for loans of this type will mitigate this ethical concern.
-**Transparency and Complexity**: Blended machine learning models can be highly complex. The incorporation of three algorithms makes interpretability difficult. To the best of our ability, we have provided as transparent and interpretable of a model card as possible.
+* **Racial and Demographic Bias**: Excluding explicit demographic information doesn't eliminate thr risk of encoding bias. Anomaly detection models can be trained on proxies of correlated features where racial of demographic bias is still perpertuate. 
+* **Ambiguity in Validation**: In unsupervised anomaly detection, the absence of labeled data identifying actual anomalies or fraud makes it challenging to validate the model's predictions accurately. We encourage analysis and decisions to be made based on differences of trends in features between suspected anomalies and suspected normal loans. This paired with significant domain knowledge of fraud detection for loans of this type will mitigate this ethical concern.
+* **Transparency and Complexity**: Blended machine learning models can be highly complex. The incorporation of three algorithms makes interpretability difficult. To the best of our ability, we have provided as transparent and interpretable of a model card as possible.
+
 
 # Risk Considerations
-**False Positives and False Negatives**: Even without labels, anomaly detection models may incorrectly label normal instances as anomalies (false positives) or fail to identify actual anomalies (false negatives).
-**Model Robustness and Generalization**: This model may perform well on this PPP dataset, but might fail to generalize to a new loan program dataset.
-**Data Quality**: The dataset included many missing values, some of which were indentified as missing from the original loan applications. However, some missing values may be the result of poor data collection practices from the data sources provided. There is little evidence of how to identify the difference.
+* **False Positives and False Negatives**: Even without labels, anomaly detection models may incorrectly label normal instances as anomalies (false positives) or fail to identify actual anomalies (false negatives).
+* **Model Robustness and Generalization**: This model may perform well on this PPP dataset, but might fail to generalize to a new loan program dataset.
+* **Data Quality**: The dataset included many missing values, some of which were indentified as missing from the original loan applications. However, some missing values may be the result of poor data collection practices from the data sources provided. There is little evidence of how to identify the difference.
 
 These risks can be mitigated by applying decision-making paired only with extensive domain knowledge of fraud detection.
 
-# Potential Next Steps
 
+# Potential Next Steps
+* Run a cost-benefit analysis
+* Formally investigate the 2642 loans identified as suspected anomalies by all three model components
+* Adjust additional hyperparameter settings
+* 
 
 # Author Contributions
 * RH served as the primary contributor for the model card
