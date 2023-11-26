@@ -302,7 +302,7 @@ Threshold for the top 5% of risk scores: 0.442
 
 Threshold for the top 1% of risk scores: 0.586
 
-![Average Risk Score Histogram]([https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/67064ecd54608507a5adf2eba3ecd19343448478/ppp_avr_hist.png](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/49c88b040f210436a14317140f54503d2e1a957b/ppp_avr_score_hist.png))
+![Average Risk Score Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/eaa842d9e54aa3f0fed2bb94a749d1ad3a4f0678/ppp_avr_score_hist.png)
 
 ### Correlation of Numerical Features with Average Risk Score
 
