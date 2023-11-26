@@ -226,9 +226,24 @@ clean['average_risk_score'] = clean[['deviant_UTILITIES_PROCEED_risk_score',
             'deviant_CurrentApprovalAmount_risk_score']].mean(axis=1)
 ```     
  
-* **Columns as outputs of models**:
-* 
+* **Columns as outputs of models**: 'final_anomaly_score', 'final_blended_anomaly_indicator'
 
+### Quantitative Analysis
+
+* ** Isolation Forest (H2O)**
+
+| Anomaly Score | Normalized Anomaly Score |
+| 22.913 | 0.006|
+
+| Number of Trees | Number of Internal Trees | Model Size in Bytes | Min Depth | Max Depth | Min Leaves | Max Leaves | Mean Leaves |
+| 40.0 | 40.0 | 9,689,439.0 | 24.0 | 24.0 | 24.0 | 7030.0 | 34,088.0 | 19,211.75 |
+
+#### Correlation Heatmap
+Initial and Current Approval Amount were both highly correlated with ForgivenessAmount, indicating both in a statistical sense the higher the approval amount, the higher the forgiveness amount but logically of the loans that were forgiven, it would seem that they were mostly, if not completely forgiven, rather than just partially.
+
+Initial and Current Approval Amount were both highly correlated with PAYROLL_PROCEED, indicating that most loans were used to process Payroll rather than utilities, mortgage interest, rent, EIDL refinancing, healthcare, or debt interest. Ranked by correlation: payroll, rent, healthcare, mortgage interest, debt interest, EIDL refinance.
+
+Initial and Current Approval amount were highly correlated with JobsReported, indicating that the SBA and lenders generally approved higher loan amounts for businesses that reported more jobs.
 
 
 
