@@ -161,7 +161,7 @@
   
 * **Type of model**: Unsupervised Average Weighted Ensemble Anomaly Detection
   
-* **Model Composition**:
+### Model Composition**:
   * The ensemble model comprises three components:
 
 1. Isolation Forest
