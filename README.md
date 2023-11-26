@@ -296,11 +296,9 @@ After calculating the average risk score for each loan, we have prepared the fol
 
 The mean average risk score for all loans was 0.228 and the threshold for the top 1.5% of risk scores was 0.545. Below are some other notable thresholds:
 
-Threshold for the top 10% of risk scores: 0.394
-
-Threshold for the top 5% of risk scores: 0.442
-
-Threshold for the top 1% of risk scores: 0.586
+* Threshold for the top 10% of risk scores: 0.394
+* Threshold for the top 5% of risk scores: 0.442
+* Threshold for the top 1% of risk scores: 0.586
 
 ![Average Risk Score Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/eaa842d9e54aa3f0fed2bb94a749d1ad3a4f0678/ppp_avr_score_hist.png)
 
