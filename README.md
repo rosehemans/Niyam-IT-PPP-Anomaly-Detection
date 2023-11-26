@@ -180,13 +180,12 @@ The ensemble model comprises three components:
 IsolationForest(n_estimators=50, max_samples = auto, contamination = 0.01, max_features = 1.0, bootstrap = False, n_jobs = None, random_state=12345, verbose = 0, warm_start = False)
 ```
 
-* **The scikit-learn Isolation Forest model is an unsupervised machine learning algorithm used for anomaly detection, isolating anomalies by constructing random decision trees and identifying instances that require fewer partitions to isolate.**
-
-* Rare and distant points are anomalies.
-* Isolation Forest uses random trees to isolate anomalies.
-* Randomly selects features and split values for tree construction.
-* Anomalies closer to tree roots need fewer partitions.
-* Shorter average path lengths across trees flag anomalies.
+* **The scikit-learn Isolation Forest model is an unsupervised machine learning algorithm used for anomaly detection, isolating anomalies by constructing random decision trees and identifying instances that require fewer partitions to isolate:**
+  * Rare and distant points are anomalies.
+  * Isolation Forest uses random trees to isolate anomalies.
+  * Randomly selects features and split values for tree construction.
+  * Anomalies closer to tree roots need fewer partitions.
+  * Shorter average path lengths across trees flag anomalies.
 
 * **Advantages**:
   * Scalability
