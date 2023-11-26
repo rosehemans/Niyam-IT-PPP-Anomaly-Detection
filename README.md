@@ -3,9 +3,9 @@
 # Basic Information
 
 * **Person or organization developing model**:
-Niyam IT;
+* **Niyam IT**;
   * Rohit Bollineni (rbollineni@niyamit.com)
-GWU MSBA;
+* **GWU MSBA**;
   * Rose Hemans (rose.hemans@gwu.edu)
   * Bagya Maduwanthi Widanagamage (bmwidanagamage@gwu.edu)
   * Kaixuan (Kevin) Han (kaixuan.han@gwu.edu)
