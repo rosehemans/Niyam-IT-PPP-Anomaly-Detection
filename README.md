@@ -247,49 +247,49 @@ Initial and Current Approval Amount were both highly correlated with PAYROLL_PRO
 
 Initial and Current Approval amount were highly correlated with JobsReported, indicating that the SBA and lenders generally approved higher loan amounts for businesses that reported more jobs.
 
-![Correlation Heatmap]
+! [Correlation Heatmap]
 (https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/f5278f20ebba7306cea7cf41ecc59b0bfe839bde/ppp_eda_corr.png)
 
 #### Initial and Current Approval Amount Scatter Plot
 
 The lower the initial and current approval amount, the more likely loans will center around the line of best fit. The distribution of residuals is not constant as intial and current approval amounts rise as we can see points more sporadically plotted further from the line of best fit.
 
-![Init/Current Approval Scatter]
+! [Init/Current Approval Scatter]
 (https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/cc030bf856c35663770c7c412e7cbf63b15af3d6/ppp_eda_intial_current_scatter.png)
 
 #### Applications by Industry
 
 Full service restaurants by far accounted for the most number of loan applications. Professional offices like Offices of Physicians, Offices of Lawyers, Offices of Dentists were also particularly prevalent for industries where loan applications were high.
 
-![Loan Apps by Industry]
+! [Loan Apps by Industry]
 (https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/d106ed5d65b20b7452d978c242dae2fdc14b9097/ppp_eda_industries_count.png)
 
 #### Applications by Loan Draw
 
 Roughly 70% of all applications were for First Draw PPP loans, with the remainder representing Second Draw PPS loans. Officially, only those who have fewer than 300 employees, have previously received a First Draw PPP loan or can demonstrate at least a 25% reduction in gross receipts between comparable quarters in 2019 and 2020 were eligible for Second Draw PPP loans.
 
-![Draw Plot]
+! [Draw Plot]
 (https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/796f17f3202385c02922176d58d13288f9a8c37a/ppp_eda_draw_plot.png)
 
 #### Loan Term by Draw
 
 In general, we can say that Second Draw PPS loans on average had a higher loan term than that of First Draw PPP loans. The mean loan term for PPP loans was 24.5 months while for PPS loans it was 52 months.
 
-![Loan Term Histogram]
+! [Loan Term Histogram]
 (https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/aeb62f40cfdda3aeeb2e8fd66f58e5c181ee20ff/ppp_eda_term_draw.png)
 
 #### Loans by State
 
 In accordance with population size, California, Texas, New York, and Florida were the top 4 states for number of applications. 
 
-![States]
+! [States]
 (https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/aeb62f40cfdda3aeeb2e8fd66f58e5c181ee20ff/ppp_eda_state.png)
 
 #### Current Loan Amount Per Employee by Jobs Reported
 
 We can start to analyze outliers here by observing very large loan amounts borrowed for companies with very low number of jobs reported. Many companies reporting less than 10 employees can be seen to have borrowed excessively large loan amounts.
 
-![Current PE by JR]
+! [Current PE by JR]
 (https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/aeb62f40cfdda3aeeb2e8fd66f58e5c181ee20ff/ppp_eda_loan_amount_emp.png)
 
 
