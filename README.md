@@ -464,6 +464,7 @@ These risks can be mitigated by applying decision-making paired only with extens
 * BW served as the primary contributor for the H2O IF notebook
 * RH served as the primary contributor for the AVR model notebook
 * PS, KH, BW, and RH contributed equally to EDA across all notebooks
+* PS, KH, and BW contributed equally to the EDA dashboards using Tableau
 
 
 
