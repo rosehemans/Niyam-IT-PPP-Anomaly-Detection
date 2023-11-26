@@ -201,9 +201,9 @@ IsolationForest(n_estimators=50, max_samples = auto, contamination = 0.01, max_f
   
 ### 2. Isolation Forest (H2O IF)
 
-    * **Software used to implement the model**: Python, H2O
-    * **Version of the modeling software**: Python 3.9.12, H2O 3.44.0.1
-    * **Hyperparameters or other settings of model**:
+   * **Software used to implement the model**: Python, H2O
+   * **Version of the modeling software**: Python 3.9.12, H2O 3.44.0.1
+   * **Hyperparameters or other settings of model**:
 
 ```
 hyper_params = {
@@ -233,7 +233,6 @@ grid.train(x=anomaly_inputs, training_frame=train)
 ```
 
 ```
-#selected model: iso_grid1_model_31
 isolationForest(ntrees = 40.0, max_depth = 24.0, sample_rate = 0.9, col_sample_rate_per_tree = 1.0)
 ```
 
