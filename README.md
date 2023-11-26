@@ -281,9 +281,10 @@ In accordance with population size, California, Texas, New York, and Florida wer
 
 #### Current Loan Amount Per Employee by Jobs Reported
 
-We can start to analyze outliers here by observing very large loan amounts borrowed for companies with very low number of jobs reported. Many companies reporting less than 10 employees can be seen to have borrowed excessively large loan amounts.
+We can start to analyze outliers here by observing very large loan amounts borrowed for companies with very low numbers of jobs reported. Many companies reporting less than 10 employees can be seen to have borrowed excessively large loan amounts.
 
-! [Current PE by JR](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/aeb62f40cfdda3aeeb2e8fd66f58e5c181ee20ff/ppp_eda_loan_amount_emp.png)
+![Current PE by JR](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/aeb62f40cfdda3aeeb2e8fd66f58e5c181ee20ff/ppp_eda_loan_amount_emp.png)
+
 
 
 
