@@ -324,10 +324,16 @@ PAYROLL_PROCEED_per_empoyee, Size standards in number of employees, ForgivenessA
 
 ![sklearn Feature Importance](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/89e8ec4d8e53e19899db6dbed29a83afec2a3834/ppp_sklearn_feature_importance.png)
 
+#### Surrogate Model
 
+We ran a surrogate model to provide a simplified interpretable model that mimics the predictions of our more complex and computationally expensive Isolation Forest model. This surrogate model is an Isolation Forest model with just one tree and the following parameters:
 
+| Number of Trees | Number of Internal Trees | Model Size in Bytes | Min Depth | Max Depth | Min Leaves | Max Leaves | Mean Leaves |
+| --------------- | ------------------------ | ------------------- | --------- | --------- | ---------- | ---------- | ----------- |
+| 1.0 | 1.0 | 133.0 | 3.0 | 3.0 | 3.0 | 6.0 | 6.0 | 6.0 |
 
+*Since the surrogate isolation forest model has just one decision tree, we have named it a decision tree but we would like to note that the model is still used in the context of anomaly detection and not classification since this is an unsupervised learning task.*
 
-
+![Surrogate Model](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/b8d18791060fc4278ff41eca97645520033fc490/ppp_sklearn_surrogate_dt.png)
 
 
