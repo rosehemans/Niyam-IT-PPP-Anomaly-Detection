@@ -371,5 +371,10 @@ In comparison, DC (641 normal loans and 14 anomalous loans per 100k), North Dako
 
 ![Geo Analysis H20](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/4fb516030eb9a1230aad91a54928b0bc9589fbe6/ppp_h2o_geo.png)
 
+#### Industry Analysis of Suspected Anomalies from H2O Model
 
+New Car Dealers (2.03%), Full-Service Restaurants (1.76%), Couriers and Express Delivery Services (1.65%), and Limited Full Service Restaurants (1.41%) were top 3 known industries for suspected anomalous loans. Almost 8% of all suspected anomalous loans either did not report a valid NAICS code on their application or NAICS code data was missing in the SBA data collection process.
 
+![H2O Industry Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/0695588c871e426b6d7624439e9a311080709fcd/ppp_h2o_industries.png)
+
+![H2O Industries Word Cloud](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/e59e7670b412aad666f562f1a17806ce755b60f8/ppp_h2o_industries_wc.png)
