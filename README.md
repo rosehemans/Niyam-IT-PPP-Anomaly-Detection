@@ -1,6 +1,6 @@
 # Niyam-IT-PPP-Anomaly-Detection
 
-### Basic Information
+# Basic Information
 
 * **Person or organization developing model**: Niyam IT; Rohit Bollineni (rbollineni@niyamit.com), GWU MSBA; Rose Hemans (rose.hemans@gwu.edu), Bagya Maduwanthi Widanagamage (bmwidanagamage@gwu.edu), Kaixuan (Kevin) Han (kaixuan.han@gwu.edu), Pavneet Singh (pavneet@gwu.edu)
   
@@ -9,14 +9,14 @@
 * **License**: MIT
 * **Model implementation code**: (ADD AT END)
 
-### Intended Use
+# Intended Use
 * **Primary intended uses**: This model is an example of an end-to-end anomaly detection modeling process that is intended to be used as a guide for current and future anomaly detection models.
 * **Primary intended users**: Niyam IT, Patrick Hall, and students in the GW MSBA DNSC 6317 class.
 * **Out-of-scope use cases**: Any use beyond an educational example is out-of-scope.
 
-* ### Training Data
+# Training Data
 
-* Data dictionary: 
+* **Data dictionary**: 
 
 | Name                              | Modeling Role | Measurement Level | Description                                                               |
 | --------------------------------- | ------------- | ----------------- | ------------------------------------------------------------------------- |
@@ -138,7 +138,7 @@
 * **Number of rows in training data**:
   * Training rows: 965,548
  
-### Model details
+# Model details
 * **Columns used as inputs in the final model**: 'ProcessingMethod', 'LoanStatus', 'Term',
                   'InitialApprovalAmount', 'CurrentApprovalAmount', 'ForgivenessAmount', 
                   'RuralUrbanIndicator', 'HubzoneIndicator', 'LMIIndicator',
@@ -161,10 +161,10 @@
   
 * **Type of model**: Unsupervised Average Weighted Ensemble Anomaly Detection
   
-### Model Composition**:
+## Model Composition**:
 The ensemble model comprises three components:
 
-1. Isolation Forest
+### 1. Isolation Forest
     * **Software used to implement the model**: Python, scikit-learn
     * **Version of the modeling software**: (ADD AT END)
     * **Hyperparameters or other settings of model**:
@@ -172,7 +172,7 @@ The ensemble model comprises three components:
 IsolationForest(n_estimators=50, max_samples = auto, contamination = 0.01, max_features = 1.0, bootstrap = False, n_jobs = None, random_state=12345, verbose = 0, warm_start = False)
 ```
 
-2. Isolation Forest
+### 2. Isolation Forest
     * **Software used to implement the model**: Python, H2O
     * **Version of the modeling software**: (ADD AT END)
     * **Hyperparameters or other settings of model**:
@@ -205,8 +205,19 @@ grid.train(x=anomaly_inputs, training_frame=train)
 #selected model: iso_grid1_model_31
 isolationForest(ntrees = 40.0, max_depth = 24.0, sample_rate = 0.9, col_sample_rate_per_tree = 1.0)
 ```
+### Quantitative Analysis
 
-3. Average Risk Score
+**Isolation Forest (H2O)**
+
+| Anomaly Score | Normalized Anomaly Score |
+| ------------- | ------------------------ |
+| 22.913 | 0.006|
+
+| Number of Trees | Number of Internal Trees | Model Size in Bytes | Min Depth | Max Depth | Min Leaves | Max Leaves | Mean Leaves |
+| --------------- | ------------------------ | ------------------- | --------- | --------- | ---------- | ---------- | ----------- |
+| 40.0 | 40.0 | 9,689,439.0 | 24.0 | 24.0 | 24.0 | 7030.0 | 34,088.0 | 19,211.75 |
+
+### 3. Average Risk Score
     * **Software used to implement the model**: Python, pandas
     * **Version of the modeling software**: (ADD AT END)
     * **Calculation of average risk score**: Using industry size standards, we calculated standard 'expected' figures for 'per employee' data for UTILITIES_PROCEED, PAYROLL_PROCEED, MORTGAGE_INTEREST_PROCEED, REFINANCE_EIDL_PROCEED, HEALTH_CARE_PROCEED, DEBT_INTEREST_PROCEED, InitialApprovalAmount, CurrentApprovalAmount, ApprovalDifference, and ForgivenessAmount. We then calculated 'deviant' figures by calculating the difference between actual and 'expected' figures for each loan. Risk scores for each figure were calculated by percentile rank among all loans. The final average risk score is a simple arithmetic mean of risk scores:
@@ -228,19 +239,7 @@ clean['average_risk_score'] = clean[['deviant_UTILITIES_PROCEED_risk_score',
  
 **Columns as outputs of models**: 'final_anomaly_score', 'final_blended_anomaly_indicator'
 
-### Quantitative Analysis
-
-**Isolation Forest (H2O)**
-
-| Anomaly Score | Normalized Anomaly Score |
-| ------------- | ------------------------ |
-| 22.913 | 0.006|
-
-| Number of Trees | Number of Internal Trees | Model Size in Bytes | Min Depth | Max Depth | Min Leaves | Max Leaves | Mean Leaves |
-| --------------- | ------------------------ | ------------------- | --------- | --------- | ---------- | ---------- | ----------- |
-| 40.0 | 40.0 | 9,689,439.0 | 24.0 | 24.0 | 24.0 | 7030.0 | 34,088.0 | 19,211.75 |
-
-### General Exploratory Data Analysis
+# General Exploratory Data Analysis
 
 #### Correlation Heatmap
 
@@ -288,7 +287,7 @@ We can start to analyze outliers here by observing very large loan amounts borro
 
 ![Current PE by JR](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/aeb62f40cfdda3aeeb2e8fd66f58e5c181ee20ff/ppp_eda_loan_amount_emp.png)
 
-### Average Risk Score Model Exploratory Data Analysis
+# Average Risk Score Model Exploratory Data Analysis
 
 After calculating the average risk score for each loan, we have prepared the following EDA:
 
@@ -308,7 +307,7 @@ The deviant amounts for Forgiveness Amount, Initial Approval Amount, Current App
 
 ![Correlation of AVR with Numerical Features](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/67064ecd54608507a5adf2eba3ecd19343448478/ppp_avr_corr.png)
 
-### scikit-learn Isolation Forest Model Exploratory Data Analysis
+# scikit-learn Isolation Forest Model Exploratory Data Analysis
 
 #### Distribution of sklearn Isolation Forest Anomaly Scores
 
@@ -345,7 +344,7 @@ Here we can interpret the rules of the tree where UTILITIES_PROCEED_per_employee
 
 ![Surrogate Model](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/b8d18791060fc4278ff41eca97645520033fc490/ppp_sklearn_surrogate_dt.png)
 
-### H2O Isolation Forest Model Exploratory Data Analysis
+# H2O Isolation Forest Model Exploratory Data Analysis
 
 #### Distribution of H2O Isolation Forest Anomaly Scores
 
