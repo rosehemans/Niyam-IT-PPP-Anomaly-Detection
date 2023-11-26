@@ -230,7 +230,7 @@ clean['average_risk_score'] = clean[['deviant_UTILITIES_PROCEED_risk_score',
 
 ### Quantitative Analysis
 
-* ** Isolation Forest (H2O)**
+** Isolation Forest (H2O)**
 
 | Anomaly Score | Normalized Anomaly Score |
 | ------------- | ------------------------ |
