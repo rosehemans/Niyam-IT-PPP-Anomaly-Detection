@@ -1,15 +1,15 @@
-# Niyam-IT-PPP-Anomaly-Detection
+# Niyam IT Paycheck Protection Program Loan Anomaly Detection Model Card
 
 # Basic Information
 
 * **Person or organization developing model**:
-* **Niyam IT**;
-  * Rohit Bollineni (rbollineni@niyamit.com)
 * **GWU MSBA**;
   * Rose Hemans (rose.hemans@gwu.edu)
   * Bagya Maduwanthi Widanagamage (bmwidanagamage@gwu.edu)
   * Kaixuan (Kevin) Han (kaixuan.han@gwu.edu)
   * Pavneet Singh (pavneet@gwu.edu)
+* **Niyam IT**;
+  * Rohit Bollineni (rbollineni@niyamit.com)
   
 * **Model date**: Nov, 2023
 * **Model version**: 1.0
