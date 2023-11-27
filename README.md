@@ -16,7 +16,7 @@
 * **Model date**: Nov, 2023
 * **Model version**: 1.0
 * **License**: MIT
-* **Model implementation code**: ![Notebooks](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/f0f8f76f8ee1f1cf1c5cef435f4998fd6106d796/Notebooks)
+* **Model implementation code**: [Notebooks](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/f0f8f76f8ee1f1cf1c5cef435f4998fd6106d796/Notebooks)
 
 # Intended Use
 * **Primary intended uses**: This model is an example of an end-to-end anomaly detection modeling process that is intended to be used as a guide for current and future anomaly detection models.
