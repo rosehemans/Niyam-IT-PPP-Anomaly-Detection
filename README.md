@@ -161,8 +161,8 @@
 
 
 * **Source of training data**:
-* Small Business Administration (https://data.sba.gov/dataset/ppp-foia),
-* Data.gov (https://catalog.data.gov/dataset/small-business-administration-sba-size-standards-table)
+  * Small Business Administration (https://data.sba.gov/dataset/ppp-foia),
+  * Data.gov (https://catalog.data.gov/dataset/small-business-administration-sba-size-standards-table)
   
 * **Number of rows in training data**:
   * Training rows: 965,548
