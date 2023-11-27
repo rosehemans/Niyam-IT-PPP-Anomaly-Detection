@@ -2,22 +2,25 @@
 
 **Google Drive Datasets Folder**: https://drive.google.com/drive/folders/157Bi_PxtXq2lqmx0nTDuS71tw_9YnW7K?usp=drive_link
 
-# Table of Contents
+## Table of Contents
 
-* **[Basic Information](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#basic-information)**
-* **[Intended Use](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#intended-use)**
-* **[Training Data](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#training-data)**
-* **[Model Details](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#model-details)**
+* **Data Introduction**
+  * [Basic Information](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#basic-information)
+  * [Intended Use](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#intended-use)
+  * [Training Data](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#training-data)
+  * [Model Details](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#model-details)
 * **Exploratory Data Analysis**
   * [General Exploratory Data Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#general-exploratory-data-analysis)
   * [AVR Model Exploratory Data Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#avr-model-exploratory-data-analysis)
   * [scikit-learn Isolation Forest Model Exploratory Data Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#scikit-learn-isolation-forest-model-exploratory-data-analysis)
   * [H2O IF Model Exploratory Data Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#h2o-if-model-exploratory-data-analysis)
   * [Final Blended Model Exploratory Data Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#final-blended-model-exploratory-data-analysis)
-* **[Ethical Considerations](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#ethical-considerations)**
-* **[Risk Considerations](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#risk-considerations)**
-* **[Potential Next Steps](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#potential-next-steps)**
-* **[Author Contributions](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#author-contributions)**
+ 
+* Considerations and Next Steps
+  * [Ethical Considerations](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#ethical-considerations)
+  * *Risk Considerations](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#risk-considerations)
+  * [Potential Next Steps](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#potential-next-steps)
+* [Author Contributions](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#author-contributions)
 
 # Basic Information
 
