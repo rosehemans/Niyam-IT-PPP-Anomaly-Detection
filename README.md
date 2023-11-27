@@ -315,9 +315,8 @@ Full service restaurants by far accounted for the most number of loan applicatio
 
 Roughly 70% of all applications were for First Draw PPP loans, with the remainder representing Second Draw PPS loans. Officially, only those who have fewer than 300 employees, have previously received a First Draw PPP loan or can demonstrate at least a 25% reduction in gross receipts between comparable quarters in 2019 and 2020 were eligible for Second Draw PPP loans.
 
-![Draw Plot][[(https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/796f17f3202385c02922176d58d13288f9a8c37a/ppp_eda_draw_plot.png)
-](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/5d5be56221a53c4423b9ee7455f2636287133d3d/Graphs/ppp_eda_draw_plot.png)
-](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/5d5be56221a53c4423b9ee7455f2636287133d3d/Graphs/ppp_eda_draw_plot.png)
+![Draw Plot](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/796f17f3202385c02922176d58d13288f9a8c37a/ppp_eda_draw_plot.png)
+
 
 #### Loan Term by Draw
 
