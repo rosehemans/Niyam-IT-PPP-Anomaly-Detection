@@ -473,7 +473,7 @@ These risks can be mitigated by applying decision-making paired only with extens
 * Run a cost-benefit analysis
 * Formally investigate the 2642 loans identified as suspected anomalies by all three model components
 * Adjust additional hyperparameter settings
-* 
+
 
 # Author Contributions
 * RH served as the primary contributor for the model card
