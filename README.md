@@ -162,13 +162,15 @@
 
 
 
+
 * **Source of training data**:
-  * [Small Business Administration](https://data.sba.gov/dataset/ppp-foia),
+  * [Small Business Administration](https://data.sba.gov/dataset/ppp-foia)
   * [Data.gov](https://catalog.data.gov/dataset/small-business-administration-sba-size-standards-table)
   * [GWU MSBA Feature Engineering](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/841f9ca989efd7cc9056ed7caedf0ee516d02641/Notebooks/(2)%20PPP%20Additional%20Feature%20Engineering.ipynb)
   
 * **Number of rows in training data**:
   * Training rows: 965,548
+  
  
 # Model details
 * **Columns used as inputs in the final model**: 'ProcessingMethod', 'LoanStatus', 'Term',
