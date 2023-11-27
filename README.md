@@ -1,6 +1,8 @@
-# Niyam IT Paycheck Protection Program Loan Anomaly Detection Model Card - [Google Drive Datasets Folder](https://drive.google.com/drive/folders/157Bi_PxtXq2lqmx0nTDuS71tw_9YnW7K?usp=drive_link)
+# Niyam IT Paycheck Protection Program Loan Anomaly Detection Model Card
 
 ![Visualizing PPP Loan Data](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/b62c427a11173b83bc70f5c77dd145a54d95ddf1/Graphs/ppp_dashboard.jpeg)
+
+[Google Drive Datasets Folder](https://drive.google.com/drive/folders/157Bi_PxtXq2lqmx0nTDuS71tw_9YnW7K?usp=drive_link)
 
 ## Table of Contents
 
