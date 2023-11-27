@@ -295,27 +295,28 @@ Initial and Current Approval Amount were both highly correlated with PAYROLL_PRO
 
 Initial and Current Approval amount were highly correlated with JobsReported, indicating that the SBA and lenders generally approved higher loan amounts for businesses that reported more jobs.
 
-![Correlation Heatmap]([https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/f5278f20ebba7306cea7cf41ecc59b0bfe839bde/ppp_eda_corr.png](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/5d5be56221a53c4423b9ee7455f2636287133d3d/Graphs/ppp_eda_corr.png)
+![Correlation Heatmap][https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/f5278f20ebba7306cea7cf41ecc59b0bfe839bde/ppp_eda_corr.png](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/5d5be56221a53c4423b9ee7455f2636287133d3d/Graphs/ppp_eda_corr.png)
 
 #### Initial and Current Approval Amount Scatter Plot
 
 The lower the initial and current approval amount, the more likely loans will center around the line of best fit. The distribution of residuals is not constant as initial and current approval amounts rise as we can see points more sporadically plotted further from the line of best fit.
 
-![Init/Current Approval Scatter]([https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/cc030bf856c35663770c7c412e7cbf63b15af3d6/ppp_eda_intial_current_scatter.png)
+![Init/Current Approval Scatter][https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/cc030bf856c35663770c7c412e7cbf63b15af3d6/ppp_eda_intial_current_scatter.png)
 ](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/5d5be56221a53c4423b9ee7455f2636287133d3d/Graphs/ppp_eda_intial_current_scatter.png)
 
 #### Applications by Industry
 
 Full service restaurants by far accounted for the most number of loan applications. Professional offices like Offices of Physicians, Offices of Lawyers, Offices of Dentists were also particularly prevalent for industries where loan applications were high.
 
-![Loan Apps by Industry]([https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/d106ed5d65b20b7452d978c242dae2fdc14b9097/ppp_eda_industries_count.png)
+![Loan Apps by Industry][https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/d106ed5d65b20b7452d978c242dae2fdc14b9097/ppp_eda_industries_count.png)
 ](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/5d5be56221a53c4423b9ee7455f2636287133d3d/Graphs/ppp_eda_industries_count.png)
 
 #### Applications by Loan Draw
 
 Roughly 70% of all applications were for First Draw PPP loans, with the remainder representing Second Draw PPS loans. Officially, only those who have fewer than 300 employees, have previously received a First Draw PPP loan or can demonstrate at least a 25% reduction in gross receipts between comparable quarters in 2019 and 2020 were eligible for Second Draw PPP loans.
 
-![Draw Plot][(https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/796f17f3202385c02922176d58d13288f9a8c37a/ppp_eda_draw_plot.png)
+![Draw Plot][[(https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/796f17f3202385c02922176d58d13288f9a8c37a/ppp_eda_draw_plot.png)
+](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/5d5be56221a53c4423b9ee7455f2636287133d3d/Graphs/ppp_eda_draw_plot.png)
 ](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/5d5be56221a53c4423b9ee7455f2636287133d3d/Graphs/ppp_eda_draw_plot.png)
 
 #### Loan Term by Draw
