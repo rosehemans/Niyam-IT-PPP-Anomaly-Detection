@@ -2,6 +2,22 @@
 
 **Google Drive Datasets Folder**: https://drive.google.com/drive/folders/157Bi_PxtXq2lqmx0nTDuS71tw_9YnW7K?usp=drive_link
 
+# Table of Contents
+
+* **[Basic Information](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#basic-information)**
+* **[Intended Use](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#intended-use)**
+* **Training Data**[Training Data](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#training-data)
+* **Model Details**[Model Details](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#model-details)
+* **General Exploratory Data Analysis**[General Exploratory Data Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#general-exploratory-data-analysis)
+* **AVR Model Exploratory Data Analysis**[AVR Model Exploratory Data Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#avr-model-exploratory-data-analysis)
+* **scikit-learn Isolation Forest Model Exploratory Data Analysis**
+* **H2O IF Model Exploratory Data Analysis**
+* **Final Blended Model Exploratory Data Analysis**
+* **Ethical Considerations**
+* **Risk Considerations**
+* **Potential Next Steps**
+* **Author Contributions**
+
 # Basic Information
 
 * **Person or organization developing model**:
