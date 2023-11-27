@@ -295,21 +295,21 @@ Initial and Current Approval Amount were both highly correlated with PAYROLL_PRO
 
 Initial and Current Approval amount were highly correlated with JobsReported, indicating that the SBA and lenders generally approved higher loan amounts for businesses that reported more jobs.
 
-![Correlation Heatmap][https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/f5278f20ebba7306cea7cf41ecc59b0bfe839bde/ppp_eda_corr.png](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/5d5be56221a53c4423b9ee7455f2636287133d3d/Graphs/ppp_eda_corr.png)
+![Correlation Heatmap](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_eda_corr.png)
+
 
 #### Initial and Current Approval Amount Scatter Plot
 
 The lower the initial and current approval amount, the more likely loans will center around the line of best fit. The distribution of residuals is not constant as initial and current approval amounts rise as we can see points more sporadically plotted further from the line of best fit.
 
-![Init/Current Approval Scatter][https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/cc030bf856c35663770c7c412e7cbf63b15af3d6/ppp_eda_intial_current_scatter.png)
-](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/5d5be56221a53c4423b9ee7455f2636287133d3d/Graphs/ppp_eda_intial_current_scatter.png)
+![Init/Current Approval Scatter](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_eda_intial_current_scatter.png)
+
 
 #### Applications by Industry
 
 Full service restaurants by far accounted for the most number of loan applications. Professional offices like Offices of Physicians, Offices of Lawyers, Offices of Dentists were also particularly prevalent for industries where loan applications were high.
 
-![Loan Apps by Industry][https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/d106ed5d65b20b7452d978c242dae2fdc14b9097/ppp_eda_industries_count.png)
-](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/5d5be56221a53c4423b9ee7455f2636287133d3d/Graphs/ppp_eda_industries_count.png)
+![Loan Apps by Industry](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/d106ed5d65b20b7452d978c242dae2fdc14b9097/ppp_eda_industries_count.png)
 
 #### Applications by Loan Draw
 
@@ -322,19 +322,22 @@ Roughly 70% of all applications were for First Draw PPP loans, with the remainde
 
 In general, we can say that Second Draw PPS loans on average had a higher loan term than that of First Draw PPP loans. The mean loan term for PPP loans was 24.5 months while for PPS loans it was 52 months.
 
-![Loan Term Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/aeb62f40cfdda3aeeb2e8fd66f58e5c181ee20ff/ppp_eda_term_draw.png)
+![Loan Term Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_eda_term_draw.png)
+
 
 #### Loans by State
 
 In accordance with population size, California, Texas, New York, and Florida were the top 4 states for the number of applications.
 
-![States](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/aeb62f40cfdda3aeeb2e8fd66f58e5c181ee20ff/ppp_eda_state.png)
+![States](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_eda_state.png)
+
 
 #### Current Loan Amount Per Employee by Jobs Reported
 
 We can start to analyze outliers here by observing very large loan amounts borrowed for companies with very low numbers of jobs reported. Many companies reporting less than 10 employees can be seen to have borrowed excessively large loan amounts.
 
-![Current PE by JR](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/raw/aeb62f40cfdda3aeeb2e8fd66f58e5c181ee20ff/ppp_eda_loan_amount_emp.png)
+![Current PE by JR](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_eda_loan_amount_emp.png)
+
 
 # AVR Model Exploratory Data Analysis
 
@@ -348,13 +351,15 @@ The mean average risk score for all loans was 0.228 and the threshold for the to
 * Threshold for the top 5% of risk scores: 0.442
 * Threshold for the top 1% of risk scores: 0.586
 
-![Average Risk Score Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/eaa842d9e54aa3f0fed2bb94a749d1ad3a4f0678/ppp_avr_score_hist.png)
+![Average Risk Score Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_avr_score_hist.png)
+
 
 ### Correlation of Numerical Features with Average Risk Score
 
 The deviant amounts for Forgiveness Amount, Initial Approval Amount, Current Approval Amount were most highly correlated with average risk score despite all deviant risk scores being equally weighted in the Average Risk Score calculation (i.e., actual amount - expected amount based on industry size standards).
 
-![Correlation of AVR with Numerical Features](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/67064ecd54608507a5adf2eba3ecd19343448478/ppp_avr_corr.png)
+![Correlation of AVR with Numerical Features](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_avr_corr.png)
+
 
 # scikit-learn Isolation Forest Model Exploratory Data Analysis
 
@@ -362,13 +367,15 @@ The deviant amounts for Forgiveness Amount, Initial Approval Amount, Current App
 
 The mean for anomaly scores from the sklearn Isolation Forest model was 0.0156. The model outputted 1.01% of the dataset as suspected anomalies.
 
-![sklearn Score Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/61572e8a84a1a96af90185bec25449a6c2c364a8/ppp_skl_score_hist.png)
+![sklearn Score Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_skl_score_hist.png)
+
 
 #### Feature Importance for SKL IF
 
 PAYROLL_PROCEED_per_empoyee, Size standards in number of employees, ForgivenessAmount, and JobsReported were the most important features in this model. BorrowerState closely led and was noted for further EDA at the end of the final model.
 
-![sklearn Feature Importance](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/89e8ec4d8e53e19899db6dbed29a83afec2a3834/ppp_sklearn_feature_importance.png)
+![sklearn Feature Importance](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_sklearn_feature_importance.png)
+
 
 #### Surrogate Model
 
@@ -391,7 +398,8 @@ global_surrogate_dt.train(training_frame = train, x = anomaly_inputs, y = "anoma
 
 Here we can interpret the rules of the tree where UTILITIES_PROCEED_per_employee, deviant_ApprovalDifference, ServicingLenderCity, JobsReported, HEALTH_CARE_PROCEED and deviant_JR (jobs reported) were some of the most important features for splitting.
 
-![Surrogate Model](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/b8d18791060fc4278ff41eca97645520033fc490/ppp_sklearn_surrogate_dt.png)
+![Surrogate Model](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_sklearn_surrogate_dt.png)
+
 
 # H2O IF Model Exploratory Data Analysis
 
@@ -399,13 +407,15 @@ Here we can interpret the rules of the tree where UTILITIES_PROCEED_per_employee
 
 The mean anomaly score for this model was 0.005, with the top 2.6% of scores being assigned as suspected anomalies by the model. The score threshold for these top 2.6% suspected anomalies was 0.036.
 
-![H2O IF Anomaly Scores Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/36765a2872df2da1ace34264c4d18af1955b4a10/ppp_h2o_score_hist.png)
+![H2O IF Anomaly Scores Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_h2o_score_hist.png)
+
 
 #### Correlation of Numerical Features with H2O IF Model Anomaly Scores
 
 InitialApprovalAmount (0.42), CurrentApprovalAmount (0.42), PAYROLL_PROCEED (0.37), and ForgivenessAmount (0.37) were top for strong positive correlation with the anomaly risk score for this model.
 
-![H2O IF Anomaly Score Correlations](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/c6fa3d1d7d067a8785e98006edc722e7d4becb09/ppp_h20_if_corr.png)
+![H2O IF Anomaly Score Correlations](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_h20_if_corr.png)
+
 
 #### Geographical Analysis of Suspected Anomalies from H2O IF Model
 
@@ -415,15 +425,17 @@ The top two graphs show clearly just how different the top 10 states for suspect
 
 In comparison, DC (641 normal loans and 14 anomalous loans per 100k), North Dakota (402 normal loans and 12 anomalous loans per 100k), and Massachusetts (361 normal loans and 8 anomalous loans per 100k) were the top states for number of normal loans adjusted for state population size, whilst still exhibiting low anomalous loan rates.
 
-![Geo Analysis H20](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/4fb516030eb9a1230aad91a54928b0bc9589fbe6/ppp_h2o_geo.png)
+![Geo Analysis H20](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_h2o_geo.png)
+
 
 #### Industry Analysis of Suspected Anomalies from H2O IF Model
 
 New Car Dealers (2.03%), Full-Service Restaurants (1.76%), Couriers and Express Delivery Services (1.65%), and Limited Full Service Restaurants (1.41%) were top 3 known industries for suspected anomalous loans. Almost 8% of all suspected anomalous loans either did not report a valid NAICS code on their application or NAICS code data was missing in the SBA data collection process.
 
-![H2O Industry Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/0695588c871e426b6d7624439e9a311080709fcd/ppp_h2o_industries.png)
+![H2O Industry Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_h2o_industries.png)
 
-![H2O Industries Word Cloud](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/e59e7670b412aad666f562f1a17806ce755b60f8/ppp_h2o_industries_wc.png)
+
+![H2O Industries Word Cloud](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_h2o_industries_wc.png)
 
 # Final Blended Model Exploratory Data Analysis
 
@@ -431,7 +443,8 @@ New Car Dealers (2.03%), Full-Service Restaurants (1.76%), Couriers and Express 
 
 The vast majority of loans had a risk score between 0.0 and 0.2. The mean risk score was 0.13 and the histogram below displays right skew as expected. The top 1.5% of loans had a risk score threshold of 0.328.
 
-![Final Risk Score Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/678d07906f9d6e8147fdd1845797a4b10f73764b/ppp_final_score_hist.png)
+![Final Risk Score Histogram](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_final_score_hist.png)
+
 
 #### Jaccard Heatmap of Final Model Components (AVR, H2O IF, SKL IF)
 
@@ -439,8 +452,7 @@ The vast majority of loans had a risk score between 0.0 and 0.2. The mean risk s
 
 * The AVR model had a JSC of 0.1653 with the SKL IF model.
 
-![Jaccard Heatmap](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/314416d56728e5f82ebebedddbc477aac3228e1e/ppp_jaccard.png)
-
+![Jaccard Heatmap](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_jaccard.png)
 
 # Ethical Considerations
 
