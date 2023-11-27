@@ -16,11 +16,12 @@
   * [H2O IF Model Exploratory Data Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#h2o-if-model-exploratory-data-analysis)
   * [Final Blended Model Exploratory Data Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#final-blended-model-exploratory-data-analysis)
  
-* Considerations and Next Steps
+* **Considerations and Next Steps**
   * [Ethical Considerations](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#ethical-considerations)
-  * *Risk Considerations](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#risk-considerations)
+  * [Risk Considerations](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#risk-considerations)
   * [Potential Next Steps](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#potential-next-steps)
-* [Author Contributions](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#author-contributions)
+
+* **[Author Contributions](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#author-contributions)**
 
 # Basic Information
 
