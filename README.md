@@ -1,5 +1,7 @@
 # Niyam IT Paycheck Protection Program Loan Anomaly Detection Model Card
 
+**Google Drive Datasets Folder**: https://drive.google.com/drive/folders/157Bi_PxtXq2lqmx0nTDuS71tw_9YnW7K?usp=drive_link
+
 # Basic Information
 
 * **Person or organization developing model**:
