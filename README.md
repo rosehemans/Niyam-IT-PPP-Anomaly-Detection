@@ -6,17 +6,17 @@
 
 * **[Basic Information](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#basic-information)**
 * **[Intended Use](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#intended-use)**
-* **Training Data**[Training Data](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#training-data)
-* **Model Details**[Model Details](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#model-details)
-* **General Exploratory Data Analysis**[General Exploratory Data Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#general-exploratory-data-analysis)
-* **AVR Model Exploratory Data Analysis**[AVR Model Exploratory Data Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#avr-model-exploratory-data-analysis)
-* **scikit-learn Isolation Forest Model Exploratory Data Analysis**
-* **H2O IF Model Exploratory Data Analysis**
-* **Final Blended Model Exploratory Data Analysis**
-* **Ethical Considerations**
-* **Risk Considerations**
-* **Potential Next Steps**
-* **Author Contributions**
+* **[Training Data](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#training-data)**
+* **[Model Details](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#model-details)**
+* **[General Exploratory Data Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#general-exploratory-data-analysis)**
+* **[AVR Model Exploratory Data Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#avr-model-exploratory-data-analysis)**
+* **[scikit-learn Isolation Forest Model Exploratory Data Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#scikit-learn-isolation-forest-model-exploratory-data-analysis)**
+* **[H2O IF Model Exploratory Data Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#h2o-if-model-exploratory-data-analysis)**
+* **[Final Blended Model Exploratory Data Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#final-blended-model-exploratory-data-analysis)**
+* **[Ethical Considerations](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#ethical-considerations)**
+* **[Risk Considerations](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#risk-considerations)**
+* **[Potential Next Steps](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#potential-next-steps)**
+* **[Author Contributions](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#author-contributions)**
 
 # Basic Information
 
