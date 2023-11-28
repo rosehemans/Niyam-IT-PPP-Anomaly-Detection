@@ -483,6 +483,19 @@ The vast majority of loans had a risk score between 0.0 and 0.2. The mean risk s
 
 ![Jaccard Heatmap](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_jaccard.png)
 
+### Tableau Dashboard for Blended Anomalies 
+
+* Most of the Anomalies lie in the outliers of the Scatter plot
+
+* According to the NAICS industry distribution, highest number of Anomalies lie within the new car dealers followed by unknown/not-stated, Limited Service Restaurants and Commercial printing
+
+* But, Courier and Express Delivery Services has the highest percentage of Anomalies when compared to non-anomalous data to be about 16.21% of anomalous loan applications followed by
+Aircraft Parts and AUxillary equipments and Crude Petroleum Extraction industries
+
+* When exploring the Current approval amounts per employee, it can be observed that most of the outliers with obnoxiously high amount of loans approved per employee came out to be anomalous which is similat to what we suggested during our initial EDA
+  
+![Dashboard 1](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/Dashboard%201.png)
+
 # Ethical Considerations
 
 * **Racial and Demographic Bias**: Excluding explicit demographic information doesn't eliminate thr risk of encoding bias. Anomaly detection models can be trained on proxies of correlated features where racial of demographic bias is still perpertuate. 
