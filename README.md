@@ -496,6 +496,19 @@ Aircraft Parts and AUxillary equipments and Crude Petroleum Extraction industrie
   
 ![Dashboard 1](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/Dashboard%201.png)
 
+
+
+* Comparing the various veteran Status, it can be obsereved that veterans are least threat for an anomalous loan with nearly 0 fraud applications whereas Unstated are highest prone to fraudulent loan application followed by Non-veterans
+
+* Comparing the term duration for anomalous and Non-anomalous data, It can be observed that most PPP fraud appliations had term duration between 0 to 50 months.
+
+* According to the Business Age Description, Change of Ownership has highest possiblity of having an anomalous loan application
+
+* Business Existing more than 2 years have highest number of applications with about 1.56% being anomalous
+
+![Dashboard 2](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/Dashboard%202.png)
+
+
 # Ethical Considerations
 
 * **Racial and Demographic Bias**: Excluding explicit demographic information doesn't eliminate thr risk of encoding bias. Anomaly detection models can be trained on proxies of correlated features where racial of demographic bias is still perpertuate. 
