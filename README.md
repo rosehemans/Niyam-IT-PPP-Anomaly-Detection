@@ -210,13 +210,9 @@ IsolationForest(n_estimators=50, max_samples = auto, contamination = 0.01, max_f
 * **The scikit-learn Isolation Forest model is an unsupervised machine learning algorithm used for anomaly detection, isolating anomalies by constructing random decision trees and identifying instances that require fewer partitions to isolate:**
   
   * Rare and distant points are anomalies.
-    
   * Isolation Forest uses random trees to isolate anomalies.
-    
   * Randomly selects features and split values for tree construction.
-    
   * Anomalies closer to tree roots need fewer partitions.
-  
   * Shorter average path lengths across trees flag anomalies.
 
 * **Advantages**:
