@@ -308,7 +308,7 @@ clean['average_risk_score'] = clean[['deviant_UTILITIES_PROCEED_risk_score',
             'deviant_CurrentApprovalAmount_risk_score']].mean(axis=1)
 ```     
  
-**Columns as outputs of models**: 'final_anomaly_score', 'final_blended_anomaly_indicator'
+**Columns as outputs of blended model**: 'final_anomaly_score', 'final_blended_anomaly_indicator'
 
 # General Exploratory Data Analysis
 
