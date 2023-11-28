@@ -2,6 +2,8 @@
 
 ![Visualizing PPP Loan Data][(https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/e3fdcdb14695db02831f3d8ed8dc847eb047c0d9/Graphs/ppp_dashboard_update.jpeg)]
 
+![Dashboard](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/e3fdcdb14695db02831f3d8ed8dc847eb047c0d9/Graphs/ppp_dashboard_update.jpeg)
+
 [Google Drive Datasets Folder](https://drive.google.com/drive/folders/157Bi_PxtXq2lqmx0nTDuS71tw_9YnW7K?usp=drive_link)
 
 ## Table of Contents
