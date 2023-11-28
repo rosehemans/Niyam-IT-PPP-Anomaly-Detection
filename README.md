@@ -1,4 +1,4 @@
-o# Niyam IT Paycheck Protection Program Loan Anomaly Detection Model Card
+# Niyam IT Paycheck Protection Program Loan Anomaly Detection Model Card
 
 ![Dashboard](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/e3fdcdb14695db02831f3d8ed8dc847eb047c0d9/Graphs/ppp_dashboard_update.jpeg)
 
@@ -510,7 +510,7 @@ The vast majority of loans had a risk score between 0.0 and 0.2. The mean risk s
 
 # Ethical Considerations
 
-* **Racial and Demographic Bias**: Excluding explicit demographic information doesn't eliminate the risk of encoding bias. Anomaly detection models can be trained on proxies of correlated features where racial of demographic bias is still perpertuate. 
+* **Racial and Demographic Bias**: Excluding explicit demographic information doesn't eliminate the risk of encoding bias. Anomaly detection models can be trained on proxies of correlated features where racial of demographic bias is still perpetuate. 
 * **Ambiguity in Validation**: In unsupervised anomaly detection, the absence of labeled data identifying actual anomalies or fraud makes it challenging to validate the model's predictions accurately. We encourage analysis and decisions to be made based on differences of trends in features between suspected anomalies and suspected normal loans. This paired with significant domain knowledge of fraud detection for loans of this type will mitigate this ethical concern.
 * **Transparency and Complexity**: Blended machine learning models can be highly complex. The incorporation of three algorithms makes interpretability difficult. To the best of our ability, we have provided as transparent and interpretable of a model card as possible.
 
@@ -518,7 +518,7 @@ The vast majority of loans had a risk score between 0.0 and 0.2. The mean risk s
 # Risk Considerations
 * **False Positives and False Negatives**: Even without labels, anomaly detection models may incorrectly label normal instances as anomalies (false positives) or fail to identify actual anomalies (false negatives).
 * **Model Robustness and Generalization**: This model may perform well on this PPP dataset, but might fail to generalize to a new loan program dataset.
-* **Data Quality**: The dataset included many missing values, some of which were indentified as missing from the original loan applications. However, some missing values may be the result of poor data collection practices from the data sources provided. There is little evidence of how to identify the difference.
+* **Data Quality**: The dataset included many missing values, some of which were identified as missing from the original loan applications. However, some missing values may be the result of poor data collection practices from the data sources provided. There is little evidence of how to identify the difference.
 
 These risks can be mitigated by applying decision-making paired only with extensive domain knowledge of fraud detection.
 
