@@ -1,4 +1,4 @@
-# Niyam IT Paycheck Protection Program Loan Anomaly Detection Model Card
+o# Niyam IT Paycheck Protection Program Loan Anomaly Detection Model Card
 
 ![Dashboard](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/e3fdcdb14695db02831f3d8ed8dc847eb047c0d9/Graphs/ppp_dashboard_update.jpeg)
 
@@ -485,33 +485,32 @@ The vast majority of loans had a risk score between 0.0 and 0.2. The mean risk s
 
 ### Tableau Dashboard for Blended Anomalies 
 
-* Most of the Anomalies lie in the outliers of the Scatter plot
+* Most of the anomalies lie in the outliers of the scatter plot.
 
-* According to the NAICS industry distribution, highest number of Anomalies lie within the new car dealers followed by unknown/not-stated, Limited Service Restaurants and Commercial printing
+* According to the NAICS industry distribution, highest number of anomalies lie within the New Car Dealers industry followed by UKNOWN/NOTSTATED, Limited Service Restaurants and Commercial Printing.
 
-* But, Courier and Express Delivery Services has the highest percentage of Anomalies when compared to non-anomalous data to be about 16.21% of anomalous loan applications followed by
-Aircraft Parts and AUxillary equipments and Crude Petroleum Extraction industries
+* Courier and Express Delivery Services has the highest percentage of anomalies (16.21%) when compared to normal loans followed by Aircraft Parts and Auxillary Equipments and Crude Petroleum Extraction industries.
 
-* When exploring the Current approval amounts per employee, it can be observed that most of the outliers with obnoxiously high amount of loans approved per employee came out to be anomalous which is similat to what we suggested during our initial EDA
+* When exploring the Current Approval Amounts per Employee, it can be observed that most of the outliers with extremely high amount of loans approved per employee proved to be anomalous which is similar to what the initial EDA suggested.
   
 ![Dashboard 1](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/Dashboard%201.png)
 
 
 
-* Comparing the various veteran Status, it can be obsereved that veterans are least threat for an anomalous loan with nearly 0 fraud applications whereas Unstated are highest prone to fraudulent loan application followed by Non-veterans
+* Veterans accounted for nearly 0 anomalous applications whereas applications where no veteran status (UKNOWN/UNSTATED) was listed are constituted the highest number of anomalous loan applications followed by Non-Veterans.
 
-* Comparing the term duration for anomalous and Non-anomalous data, It can be observed that most PPP fraud appliations had term duration between 0 to 50 months.
+* Comparing the term duration for anomalous and normal loan data, most anomalous appliations had term duration between 0 to 50 months.
 
-* According to the Business Age Description, Change of Ownership has highest possiblity of having an anomalous loan application
+* According to the Business Age Description, Change of Ownership has highest probability of having an anomalous loan application.
 
-* Business Existing more than 2 years have highest number of applications with about 1.56% being anomalous
+* Business Existing More than 2 years have highest number of applications in total with about 1.56% being anomalous.
 
 ![Dashboard 2](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/Dashboard%202.png)
 
 
 # Ethical Considerations
 
-* **Racial and Demographic Bias**: Excluding explicit demographic information doesn't eliminate thr risk of encoding bias. Anomaly detection models can be trained on proxies of correlated features where racial of demographic bias is still perpertuate. 
+* **Racial and Demographic Bias**: Excluding explicit demographic information doesn't eliminate the risk of encoding bias. Anomaly detection models can be trained on proxies of correlated features where racial of demographic bias is still perpertuate. 
 * **Ambiguity in Validation**: In unsupervised anomaly detection, the absence of labeled data identifying actual anomalies or fraud makes it challenging to validate the model's predictions accurately. We encourage analysis and decisions to be made based on differences of trends in features between suspected anomalies and suspected normal loans. This paired with significant domain knowledge of fraud detection for loans of this type will mitigate this ethical concern.
 * **Transparency and Complexity**: Blended machine learning models can be highly complex. The incorporation of three algorithms makes interpretability difficult. To the best of our ability, we have provided as transparent and interpretable of a model card as possible.
 
