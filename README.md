@@ -312,6 +312,10 @@ clean['average_risk_score'] = clean[['deviant_UTILITIES_PROCEED_risk_score',
 
 # General Exploratory Data Analysis
 
+#### PPP Overview Dashboard
+
+![PPP Dashboard 2](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/273c9b50786cf91e2c3a3605e94b6c74ac1efc7c/Graphs/ppp_dashboard_2.jpeg)
+
 #### Correlation Heatmap
 
 Initial and Current Approval Amount were both highly correlated with ForgivenessAmount, indicating both in a statistical sense the higher the approval amount, the higher the forgiveness amount but logically of the loans that were forgiven, it would seem that they were mostly, if not completely forgiven, rather than just partially.
