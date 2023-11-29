@@ -1,4 +1,4 @@
-# Niyam IT Paycheck Protection Program Loan Anomaly Detection Model Card
+# Paycheck Protection Program Loan Anomaly Detection Model Card
 
 ![Dashboard](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/e3fdcdb14695db02831f3d8ed8dc847eb047c0d9/Graphs/ppp_dashboard_update.jpeg)
 
