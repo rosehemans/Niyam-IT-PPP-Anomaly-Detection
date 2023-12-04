@@ -404,7 +404,7 @@ The mean for anomaly scores from the sklearn Isolation Forest model was 0.0156. 
 
 PAYROLL_PROCEED_per_empoyee, Size standards in number of employees, ForgivenessAmount, and JobsReported were the most important features in this model. BorrowerState closely led and was noted for further EDA at the end of the final model.
 
-![sklearn Feature Importance](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_sklearn_feature_importance.png)
+![sklearn Feature Importance](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/0fa990e139670c543cc9016fea873dc8b2696d67/Graphs/ppp_sklearn_feature_importanceRED.png)
 
 
 #### Surrogate Model
@@ -444,7 +444,7 @@ The mean anomaly score for this model was 0.005, with the top 2.6% of scores bei
 
 InitialApprovalAmount (0.42), CurrentApprovalAmount (0.42), PAYROLL_PROCEED (0.37), and ForgivenessAmount (0.37) were top for strong positive correlation with the anomaly risk score for this model.
 
-![H2O IF Anomaly Score Correlations](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_h20_if_corr.png)
+![H2O IF Anomaly Score Correlations](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/0fa990e139670c543cc9016fea873dc8b2696d67/Graphs/ppp_h20_if_corrRED.png)
 
 
 #### Geographical Analysis of Suspected Anomalies from H2O IF Model
@@ -455,14 +455,14 @@ The top two graphs show clearly just how different the top 10 states for suspect
 
 In comparison, DC (641 normal loans and 14 anomalous loans per 100k), North Dakota (402 normal loans and 12 anomalous loans per 100k), and Massachusetts (361 normal loans and 8 anomalous loans per 100k) were the top states for number of normal loans adjusted for state population size, whilst still exhibiting low anomalous loan rates.
 
-![Geo Analysis H20](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_h2o_geo.png)
+![Geo Analysis H20](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/0fa990e139670c543cc9016fea873dc8b2696d67/Graphs/ppp_h2o_geoRED.png)
 
 
 #### Industry Analysis of Suspected Anomalies from H2O IF Model
 
 New Car Dealers (2.03%), Full-Service Restaurants (1.76%), Couriers and Express Delivery Services (1.65%), and Limited Full Service Restaurants (1.41%) were top 3 known industries for suspected anomalous loans. Almost 8% of all suspected anomalous loans either did not report a valid NAICS code on their application or NAICS code data was missing in the SBA data collection process.
 
-![H2O Industry Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_h2o_industries.png)
+![H2O Industry Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/0fa990e139670c543cc9016fea873dc8b2696d67/Graphs/ppp_h2o_industriesRED.png)
 
 
 ![H2O Industries Word Cloud](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_h2o_industries_wc.png)
@@ -482,7 +482,7 @@ The vast majority of loans had a risk score between 0.0 and 0.2. The mean risk s
 
 * The AVR model had a JSC of 0.1653 with the SKL IF model.
 
-![Jaccard Heatmap](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_jaccard.png)
+![Jaccard Heatmap](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/0fa990e139670c543cc9016fea873dc8b2696d67/Graphs/ppp_jaccardRED.png)
 
 ### Tableau Dashboard for Blended Anomalies 
 
