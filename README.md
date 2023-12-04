@@ -388,7 +388,7 @@ The mean average risk score for all loans was 0.228 and the threshold for the to
 
 The deviant amounts for Forgiveness Amount, Initial Approval Amount, Current Approval Amount were most highly correlated with average risk score despite all deviant risk scores being equally weighted in the Average Risk Score calculation (i.e., actual amount - expected amount based on industry size standards).
 
-![Correlation of AVR with Numerical Features](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/ee4f7b246230f672a385bee2b54b08c403ef758f/Graphs/ppp_avr_corr.png)
+![Correlation of AVR with Numerical Features](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/478a2058ff90bbc2195f3939f56858435c0b5460/Graphs/ppp_avr_corrRED.png)
 
 
 # scikit-learn Isolation Forest Model Exploratory Data Analysis
