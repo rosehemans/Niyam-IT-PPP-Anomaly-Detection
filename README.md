@@ -486,7 +486,7 @@ The vast majority of loans had a risk score between 0.0 and 0.2. The mean risk s
 
 ### Tableau Dashboard for Blended Anomalies 
 
-* After blending the scores from all the models, we attain the final anomaly indicator which is common for all models. We get a total of 14484 anomalous loan applications out of around a million applications.
+* After combining scores from various models, a total of 14,484 anomalous loan applications were identified out of approximately one million applications.
 
 * Analysis reveals 14,053 anomalous loans processed via the PPP method, compared to only 431 through the PPS method, indicating a higher prevalence of anomalies in the PPP method.
 
