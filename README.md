@@ -494,7 +494,7 @@ The vast majority of loans had a risk score between 0.0 and 0.2. The mean risk s
 
 * When exploring the Current Approval Amounts per Employee, it can be observed that most of the outliers with extremely high amount of loans approved per employee proved to be anomalous which is similar to what the initial EDA suggested.
   
-![Dashboard 1](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/Dashboard%201.png)
+![Dashboard 1](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/Dash_3.png)
 
 
 
@@ -506,7 +506,7 @@ The vast majority of loans had a risk score between 0.0 and 0.2. The mean risk s
 
 * Business Existing More than 2 years have highest number of applications in total with about 1.56% being anomalous.
 
-![Dashboard 2](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/Dashboard%202.png)
+![Dashboard 2](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/Dash_4.png)
 
 
 # Ethical Considerations
