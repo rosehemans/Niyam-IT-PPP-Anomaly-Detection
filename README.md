@@ -486,25 +486,27 @@ The vast majority of loans had a risk score between 0.0 and 0.2. The mean risk s
 
 ### Tableau Dashboard for Blended Anomalies 
 
-* Most of the anomalies lie in the outliers of the scatter plot.
+* After blending the scores from all the models, we attain the final anomaly indicator which is common for all models. We get a total of 14484 anomalous loan applications out of around a million applications.
 
-* According to the NAICS industry distribution, highest number of anomalies lie within the New Car Dealers industry followed by UKNOWN/NOTSTATED, Limited Service Restaurants and Commercial Printing.
+* Analysis reveals 14,053 anomalous loans processed via the PPP method, compared to only 431 through the PPS method, indicating a higher prevalence of anomalies in the PPP method.
 
-* Courier and Express Delivery Services has the highest percentage of anomalies (16.21%) when compared to normal loans followed by Aircraft Parts and Auxillary Equipments and Crude Petroleum Extraction industries.
+* The map visualization shows normalized anomalies of loans per state, adjusted for population. States with darker shades have a higher ratio of anomalies relative to their population.
 
-* When exploring the Current Approval Amounts per Employee, it can be observed that most of the outliers with extremely high amount of loans approved per employee proved to be anomalous which is similar to what the initial EDA suggested.
+* The bubble chart highlights the number of loan applications by industry. Larger bubbles indicate more applications and darker bubbles show a higher number of anomalies within an industry.
+
+* The bar graph details the top anomalous lenders, with percentages atop each bar showing the proportion of anomalous loans to total loans lent by each lender.
   
 ![Dashboard 1](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/Dash_3.png)
 
 
 
-* Veterans accounted for nearly 0 anomalous applications whereas applications where no veteran status (UKNOWN/UNSTATED) was listed are constituted the highest number of anomalous loan applications followed by Non-Veterans.
+* The top-right graph on the next dashboard indicates increasing percentages of anomalous data as employee group size increases, with larger companies more likely to have anomalous loan applications.
 
-* Comparing the term duration for anomalous and normal loan data, most anomalous appliations had term duration between 0 to 50 months.
+* The bottom-left graph presents a stacked bar chart comparing anomalous and non-anomalous loan applications for veterans and non-veterans, showing no anomalies in the veterans' category and the highest proportion in the non-stated category.
 
-* According to the Business Age Description, Change of Ownership has highest probability of having an anomalous loan application.
-
-* Business Existing More than 2 years have highest number of applications in total with about 1.56% being anomalous.
+* Box plot illustrates the distribution of current approval amounts by jobs reported, with anomalous loan applications (orange dots) mostly appearing as outliers, suggesting these loans have atypical approval amounts.
+  
+* A bar chart at the bottom shows total approved loan amounts by industry, with different colors indicating non-anomalous (blue) and anomalous (orange) loans. The "UNKNOWN/NOT STATED" category has the largest total approved amount, with the "New Car Dealers" industry showing a higher relative rate of anomalies.
 
 ![Dashboard 2](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/Dash_4.png)
 
