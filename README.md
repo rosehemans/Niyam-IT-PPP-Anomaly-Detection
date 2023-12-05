@@ -508,7 +508,7 @@ The vast majority of loans had a risk score between 0.0 and 0.2. The mean risk s
   
 * A bar chart at the bottom shows total approved loan amounts by industry, with different colors indicating non-anomalous (blue) and anomalous (orange) loans. The "UNKNOWN/NOT STATED" category has the largest total approved amount, with the "New Car Dealers" industry showing a higher relative rate of anomalies.
 
-![Dashboard 2](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/Dash_2_f.png)
+![Dashboard 2](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/Dash_2_F.png)
 
 
 # Ethical Considerations
