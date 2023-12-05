@@ -496,7 +496,7 @@ The vast majority of loans had a risk score between 0.0 and 0.2. The mean risk s
 
 * The bar graph details the top anomalous lenders, with percentages atop each bar showing the proportion of anomalous loans to total loans lent by each lender.
   
-![Dashboard 1](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/Dash_3.png)
+![Dashboard 1](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/Dash_1_F.png)
 
 
 
@@ -508,7 +508,7 @@ The vast majority of loans had a risk score between 0.0 and 0.2. The mean risk s
   
 * A bar chart at the bottom shows total approved loan amounts by industry, with different colors indicating non-anomalous (blue) and anomalous (orange) loans. The "UNKNOWN/NOT STATED" category has the largest total approved amount, with the "New Car Dealers" industry showing a higher relative rate of anomalies.
 
-![Dashboard 2](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/Dash_4.png)
+![Dashboard 2](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/Dash_2_f.png)
 
 
 # Ethical Considerations
