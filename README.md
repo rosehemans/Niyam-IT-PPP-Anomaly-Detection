@@ -530,6 +530,7 @@ These risks can be mitigated by applying decision-making paired only with extens
 * Formally investigate the 2642 loans identified as suspected anomalies by all three model components
 * Adjust additional hyperparameter settings
 * Employ generative modelling to augment the training set and address data imbalance, improving existing anomaly detection modeling
+* Consult with domain expert improve fraud feature engineering
 
 
 # Author Contributions
