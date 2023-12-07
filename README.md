@@ -10,8 +10,8 @@
   * [Basic Information](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#basic-information)
   * [Intended Use](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#intended-use)
   * [Training Data](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#training-data)
-* **Model Details**(https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#model-details)
-  * [Scikit-Learn Library Isolation Forest Model]
+* **Model Details**
+  * [Scikit-Learn Library Isolation Forest Model](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/README.md#1-isolation-forest-skl-if)
   * [H2O Library Isolation Forest Model]
   * [Pandas Average Risk Score Model]
   * [Model Details]
