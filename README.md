@@ -12,9 +12,8 @@
   * [Training Data](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#training-data)
 * **Model Details**
   * [Scikit-Learn Library Isolation Forest Model](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/README.md#1-isolation-forest-skl-if)
-  * [H2O Library Isolation Forest Model]
-  * [Pandas Average Risk Score Model]
-  * [Model Details]
+  * [H2O Library Isolation Forest Model](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/README.md#2-isolation-forest-h2o-if)
+  * [Pandas Average Risk Score Model](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/README.md#3-average-risk-score-avr)
 * **Exploratory Data Analysis**:
   * [General Exploratory Data Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#general-exploratory-data-analysis)
   * [AVR Model Exploratory Data Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/tree/main#avr-model-exploratory-data-analysis)
