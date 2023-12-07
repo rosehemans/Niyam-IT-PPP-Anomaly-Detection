@@ -166,15 +166,18 @@
 
 
 
-* **Source of training data**:
+* **Data Source**:
   * [Small Business Administration](https://data.sba.gov/dataset/ppp-foia)
   * [Data.gov](https://catalog.data.gov/dataset/small-business-administration-sba-size-standards-table)
   * [GWU MSBA Feature Engineering](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/841f9ca989efd7cc9056ed7caedf0ee516d02641/Notebooks/(2)%20PPP%20Additional%20Feature%20Engineering.ipynb)
   
 * **Number of rows in training data**:
   * Training rows: 965,548
-  
  
+ #### PPP Overview Dashboard
+
+![PPP Dashboard 2](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/273c9b50786cf91e2c3a3605e94b6c74ac1efc7c/Graphs/ppp_dashboard_2.jpeg)
+  
 # Model details
 * **Columns used as inputs in the final model**: 'ProcessingMethod', 'LoanStatus', 'Term',
                   'InitialApprovalAmount', 'CurrentApprovalAmount', 'ForgivenessAmount', 
@@ -315,10 +318,6 @@ clean['average_risk_score'] = clean[['deviant_UTILITIES_PROCEED_risk_score',
 **Columns as outputs of blended model**: 'final_anomaly_score', 'final_blended_anomaly_indicator'
 
 # General Exploratory Data Analysis
-
-#### PPP Overview Dashboard
-
-![PPP Dashboard 2](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/273c9b50786cf91e2c3a3605e94b6c74ac1efc7c/Graphs/ppp_dashboard_2.jpeg)
 
 #### Correlation Heatmap
 
