@@ -454,7 +454,7 @@ InitialApprovalAmount (0.42), CurrentApprovalAmount (0.42), PAYROLL_PROCEED (0.3
 
 The 'Top 10 States by Anomaly Percentage per State' graph at the bottom shows Wyoming (13.9%), Alaska (12.8%), Alabama (5.9%), and Wisconsin (5.0%) were the top 4 known states where suspected anomalous loans occurred the most. 
 
-The top two graphs show clearly just how different the top 10 states for suspected anomalous loans per 100,000 people are compared to top states for normal loans. Wyoming (51 anomalous loans per 100k) and Arkansas (46 anomalous loans per 100k) had the highest absolute number of suspected anomalous loans adjusted for state population size.
+The top two graphs show clearly just how different the top 10 states for suspected anomalous loans per 100,000 people are compared to top states for normal loans. Wyoming (51 anomalous loans per 100k) and Alaska (46 anomalous loans per 100k) had the highest absolute number of suspected anomalous loans adjusted for state population size.
 
 In comparison, DC (641 normal loans and 14 anomalous loans per 100k), North Dakota (402 normal loans and 12 anomalous loans per 100k), and Massachusetts (361 normal loans and 8 anomalous loans per 100k) were the top states for number of normal loans adjusted for state population size, whilst still exhibiting low anomalous loan rates.
 
