@@ -509,7 +509,7 @@ The vast majority of loans had a risk score between 0.0 and 0.2. The mean risk s
 * Box plot illustrates the distribution of current approval amounts by jobs reported, with anomalous loan applications (orange dots) mostly appearing as outliers, suggesting these loans have atypical approval amounts.
   
 
-![Dashboard 2](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/D2.png)
+![Dashboard 2](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/main/Graphs/D2_1.png)
 
 
 # Ethical Considerations
