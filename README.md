@@ -462,7 +462,7 @@ In comparison, DC (641 normal loans and 14 anomalous loans per 100k), North Dako
 
 #### Industry Analysis of Suspected Anomalies from H2O IF Model
 
-New Car Dealers (2.03%), Full-Service Restaurants (1.76%), Couriers and Express Delivery Services (1.65%), and Limited Full Service Restaurants (1.41%) were top 3 known industries for suspected anomalous loans. Almost 8% of all suspected anomalous loans either did not report a valid NAICS code on their application or NAICS code data was missing in the SBA data collection process.
+New Car Dealers (2.03%), Full-Service Restaurants (1.67%), Couriers and Express Delivery Services (1.65%), and Limited Full Service Restaurants (1.41%) were top 3 known industries for suspected anomalous loans. Almost 8% of all suspected anomalous loans either did not report a valid NAICS code on their application or NAICS code data was missing in the SBA data collection process.
 
 ![H2O Industry Analysis](https://github.com/rosehemans/Niyam-IT-PPP-Anomaly-Detection/blob/0fa990e139670c543cc9016fea873dc8b2696d67/Graphs/ppp_h2o_industriesRED.png)
 
